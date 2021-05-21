@@ -7,6 +7,10 @@
 
 
 #include <xc.h>
+#include "config.h"
+#include "delay.h"
+#include "dispLCD4vias.h"
+#include "teclado.h"
 
 void main(void) {
     return;
