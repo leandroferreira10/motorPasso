@@ -1,4 +1,4 @@
-# Prejeto Motor de Passo
+# Projeto Motor de Passo
 
 ##Equipe 
 
