@@ -12,6 +12,7 @@
 #include "dispLCD4vias.h"
 #include "teclado.h"
 
-void main(void) {
+void main(void) 
+{
     return;
 }
