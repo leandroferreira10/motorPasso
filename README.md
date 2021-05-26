@@ -1,10 +1,14 @@
 # Projeto Motor de Passo
 
-##Equipe 
-
-* Leandro Costa Ferreira
-* Vitor Leandro
+# Equipe
+* Leandro
+* Vitor
 * Kleber
 
-##Objetivo
+
+# Objetivo
+Construir uma biblioteca para acionamento de motor de passo utilizando as seguintes plataformas:
+* Simulador: Simulide
+* IDE: MPLAB-X
+* Compilador: XC8
 
