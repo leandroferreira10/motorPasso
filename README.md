@@ -1,10 +1,10 @@
 # Projeto Motor de Passo
 
-##Equipe 
+## Equipe 
 
 * Leandro Costa Ferreira
 * Vitor Leandro
 * Kleber
 
-##Objetivo
+## Objetivo
 
