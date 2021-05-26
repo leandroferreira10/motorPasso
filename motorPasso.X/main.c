@@ -9,10 +9,18 @@
 #include <xc.h>
 #include "config.h"
 #include "delay.h"
-#include "dispLCD4vias.h"
-#include "teclado.h"
+#include "motordePassoKLV.h"
 
 void main(void) 
 {
-    return;
+    motordePasso_klv_init ( 100 );
+    delay(3000);
+    
+    while( 1 )
+    {
+        motordePassoKLV( CW, 90, 100 );
+        delay(3000);
+        motordePassoKLV( CCW, 180, 20 );
+        delay(3000);
+    }
 }
