@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V2.00 build -1524193055 
-                                                                                               Wed May 26 16:20:51 2021
+                                                                                               Thu May 27 16:52:59 2021
 
 Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 20180527130849
      1  0000                     
@@ -1085,51 +1085,51 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
   1023  018D                     	FNCALL	_main,_delay
   1024                           	FNCALL	_main,_motordePassoKLV
   1025                           	FNCALL	_main,_motordePasso_klv_init
-  1026                           	FNCALL	_motordePassoKLV,___awdiv
-  1027                           	FNCALL	_motordePassoKLV,___wmul
+  1026                           	FNCALL	_motordePassoKLV,___aldiv
+  1027                           	FNCALL	_motordePassoKLV,___lmul
   1028                           	FNCALL	_motordePassoKLV,_delay
   1029                           	FNROOT	_main
   1030                           	global	_tabTeclado
   1031                           	global	_passos
-  1032                           	global	_ppr
-  1033                           psect	idataBANK0,class=CODE,space=0,delta=2,noexec
-  1034                           global __pidataBANK0
-  1035                           __pidataBANK0:
-  1036  0683                     	file	"teclado.c"
-  1037                           	line	19
-  1038                           
-  1039                           ;initializer for _tabTeclado
-  1040                           	retlw	031h
-  1041  0683  3431               	retlw	032h
-  1042  0684  3432               	retlw	033h
-  1043  0685  3433               	retlw	041h
-  1044  0686  3441               	retlw	034h
-  1045  0687  3434               	retlw	035h
-  1046  0688  3435               	retlw	036h
-  1047  0689  3436               	retlw	042h
-  1048  068A  3442               	retlw	037h
-  1049  068B  3437               	retlw	038h
-  1050  068C  3438               	retlw	039h
-  1051  068D  3439               	retlw	043h
-  1052  068E  3443               	retlw	02Ah
-  1053  068F  342A               	retlw	030h
-  1054  0690  3430               	retlw	023h
-  1055  0691  3423               	retlw	044h
-  1056  0692  3444               	file	"motordePassoKLV.c"
-  1057                           	line	14
-  1058                           
-  1059                           ;initializer for _passos
-  1060                           	retlw	02h
-  1061  0693  3402               	retlw	04h
-  1062  0694  3404               	retlw	01h
-  1063  0695  3401               	retlw	08h
-  1064  0696  3408               	line	13
-  1065                           
-  1066                           ;initializer for _ppr
-  1067                           	retlw	010h
-  1068  0697  3410               	retlw	0
-  1069  0698  3400               
-  1070                           	global	_indice
+  1032                           psect	idataBANK0,class=CODE,space=0,delta=2,noexec
+  1033                           global __pidataBANK0
+  1034                           __pidataBANK0:
+  1035  0571                     	file	"teclado.c"
+  1036                           	line	19
+  1037                           
+  1038                           ;initializer for _tabTeclado
+  1039                           	retlw	031h
+  1040  0571  3431               	retlw	032h
+  1041  0572  3432               	retlw	033h
+  1042  0573  3433               	retlw	041h
+  1043  0574  3441               	retlw	034h
+  1044  0575  3434               	retlw	035h
+  1045  0576  3435               	retlw	036h
+  1046  0577  3436               	retlw	042h
+  1047  0578  3442               	retlw	037h
+  1048  0579  3437               	retlw	038h
+  1049  057A  3438               	retlw	039h
+  1050  057B  3439               	retlw	043h
+  1051  057C  3443               	retlw	02Ah
+  1052  057D  342A               	retlw	030h
+  1053  057E  3430               	retlw	023h
+  1054  057F  3423               	retlw	044h
+  1055  0580  3444               	file	"motordePassoKLV.c"
+  1056                           	line	14
+  1057                           
+  1058                           ;initializer for _passos
+  1059                           	retlw	02h
+  1060  0581  3402               	retlw	04h
+  1061  0582  3404               	retlw	01h
+  1062  0583  3401               	retlw	08h
+  1063  0584  3408               	global	_indice
+  1064                           	global	_ppr
+  1065                           psect	nvBANK0,class=BANK0,space=1,noexec
+  1066                           global __pnvBANK0
+  1067                           __pnvBANK0:
+  1068  0053                     _ppr:
+  1069  0053                            ds      2
+  1070  0053                     
   1071                           	global	_PORTD
   1072                           _PORTD	set	0x8
   1073  0008                     	global	_PORTDbits
@@ -1169,7 +1169,7 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
   1107                           __CFG_BOR4V$BOR40V equ 0x0
   1108  0000                     global __CFG_WRT$OFF
   1109                           __CFG_WRT$OFF equ 0x0
-  1110  0000                     	file	"C:\Users\21193634\AppData\Local\Temp\s8r4."
+  1110  0000                     	file	"C:\Users\21193634\AppData\Local\Temp\s7eo."
   1111                           	line	#
   1112                           psect cinit,class=CODE,delta=2
   1113                           global start_initialization
@@ -1180,1218 +1180,1493 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
   1118  07ED                     psect	bssBANK0,class=BANK0,space=1,noexec
   1119                           global __pbssBANK0
   1120                           __pbssBANK0:
-  1121  0043                     _indice:
-  1122  0043                            ds      1
-  1123  0043                     
+  1121  0055                     _indice:
+  1122  0055                            ds      1
+  1123  0055                     
   1124                           psect	dataBANK0,class=BANK0,space=1,noexec
   1125                           global __pdataBANK0
   1126                           __pdataBANK0:
-  1127  0020                     	file	"teclado.c"
+  1127  003F                     	file	"teclado.c"
   1128                           	line	19
   1129                           _tabTeclado:
-  1130  0020                            ds      16
-  1131  0020                     
+  1130  003F                            ds      16
+  1131  003F                     
   1132                           psect	dataBANK0
   1133                           	file	"motordePassoKLV.c"
   1134                           	line	14
   1135                           _passos:
-  1136  0030                            ds      4
-  1137  0030                     
-  1138                           psect	dataBANK0
-  1139                           	file	"motordePassoKLV.c"
-  1140                           	line	13
-  1141                           _ppr:
-  1142  0034                            ds      2
-  1143  0034                     
-  1144                           	file	"C:\Users\21193634\AppData\Local\Temp\s8r4."
-  1145                           	line	#
-  1146                           global btemp
-  1147                           psect inittext,class=CODE,delta=2
-  1148                           global init_fetch0,btemp
-  1149                           ;	Called with low address in FSR and high address in W
-  1150                           init_fetch0:
-  1151  0670                     	movf btemp,w
-  1152  0670  087E               	movwf pclath
-  1153  0671  008A               	movf btemp+1,w
-  1154  0672  087F               	movwf pc
-  1155  0673  0082               global init_ram0
-  1156                           ;Called with:
-  1157                           ;	high address of idata address in btemp 
-  1158                           ;	low address of idata address in btemp+1 
-  1159                           ;	low address of data in FSR
-  1160                           ;	high address + 1 of data in btemp-1
-  1161                           init_ram0:
-  1162  0674                     	fcall init_fetch0
-  1163  0674  120A  118A  2670  120A  118A  	movwf indf,f
-  1164  0679  0080               	incf fsr,f
-  1165  067A  0A84               	movf fsr,w
-  1166  067B  0804               	xorwf btemp-1,w
-  1167  067C  067D               	btfsc status,2
-  1168  067D  1903               	retlw 0
-  1169  067E  3400               	incf btemp+1,f
-  1170  067F  0AFF               	btfsc status,2
-  1171  0680  1903               	incf btemp,f
-  1172  0681  0AFE               	goto init_ram0
-  1173  0682  2E74               ; Initialize objects allocated to BANK0
-  1174                           psect cinit,class=CODE,delta=2,merge=1
-  1175                           global init_ram0, __pidataBANK0
-  1176                           	bcf	status, 7	;select IRP bank0
-  1177  07ED  1383               	movlw low(__pdataBANK0+22)
-  1178  07EE  3036               	movwf btemp-1,f
-  1179  07EF  00FD               	movlw high(__pidataBANK0)
-  1180  07F0  3006               	movwf btemp,f
-  1181  07F1  00FE               	movlw low(__pidataBANK0)
-  1182  07F2  3083               	movwf btemp+1,f
-  1183  07F3  00FF               	movlw low(__pdataBANK0)
-  1184  07F4  3020               	movwf fsr,f
-  1185  07F5  0084               	fcall init_ram0
-  1186  07F6  120A  118A  2674  120A  118A  	line	#
-  1187                           ; Clear objects allocated to BANK0
-  1188                           psect cinit,class=CODE,delta=2,merge=1
-  1189                           	clrf	((__pbssBANK0)+0)&07Fh
-  1190  07FB  01C3               psect cinit,class=CODE,delta=2,merge=1
-  1191                           global end_of_initialization,__end_of__initialization
-  1192                           
-  1193                           ;End of C runtime variable initialization code
-  1194                           
-  1195                           end_of_initialization:
-  1196  07FC                     __end_of__initialization:
-  1197  07FC                     clrf status
-  1198  07FC  0183               ljmp _main	;jump to C main() function
-  1199  07FD  120A  118A  2ED8   psect	cstackCOMMON,class=COMMON,space=1,noexec
-  1200                           global __pcstackCOMMON
-  1201                           __pcstackCOMMON:
-  1202  0070                     ?_motordePasso_klv_init:	; 1 bytes @ 0x0
-  1203  0070                     ?_delay:	; 1 bytes @ 0x0
-  1204  0070                     ?_main:	; 1 bytes @ 0x0
-  1205  0070                     	global	?___wmul
-  1206                           ?___wmul:	; 2 bytes @ 0x0
-  1207  0070                     	global	delay@t
-  1208                           delay@t:	; 2 bytes @ 0x0
-  1209  0070                     	global	motordePasso_klv_init@pulsosPorRevolucao
-  1210                           motordePasso_klv_init@pulsosPorRevolucao:	; 2 bytes @ 0x0
-  1211  0070                     	global	___wmul@multiplier
-  1212                           ___wmul@multiplier:	; 2 bytes @ 0x0
-  1213  0070                     	ds	2
-  1214  0070                     ??_motordePasso_klv_init:	; 1 bytes @ 0x2
-  1215  0072                     ??_delay:	; 1 bytes @ 0x2
-  1216  0072                     	global	___wmul@multiplicand
-  1217                           ___wmul@multiplicand:	; 2 bytes @ 0x2
-  1218  0072                     	ds	2
-  1219  0072                     ??___wmul:	; 1 bytes @ 0x4
-  1220  0074                     	global	___wmul@product
-  1221                           ___wmul@product:	; 2 bytes @ 0x4
-  1222  0074                     	ds	2
-  1223  0074                     	global	?___awdiv
-  1224                           ?___awdiv:	; 2 bytes @ 0x6
-  1225  0076                     	global	___awdiv@divisor
-  1226                           ___awdiv@divisor:	; 2 bytes @ 0x6
-  1227  0076                     	ds	2
-  1228  0076                     	global	___awdiv@dividend
-  1229                           ___awdiv@dividend:	; 2 bytes @ 0x8
-  1230  0078                     	ds	2
-  1231  0078                     ??___awdiv:	; 1 bytes @ 0xA
-  1232  007A                     	ds	1
-  1233  007A                     ??_motordePassoKLV:	; 1 bytes @ 0xB
-  1234  007B                     	ds	1
-  1235  007B                     ??_main:	; 1 bytes @ 0xC
-  1236  007C                     psect	cstackBANK0,class=BANK0,space=1,noexec
-  1237                           global __pcstackBANK0
-  1238                           __pcstackBANK0:
-  1239  0036                     	global	___awdiv@counter
-  1240                           ___awdiv@counter:	; 1 bytes @ 0x0
-  1241  0036                     	ds	1
-  1242  0036                     	global	___awdiv@sign
-  1243                           ___awdiv@sign:	; 1 bytes @ 0x1
-  1244  0037                     	ds	1
-  1245  0037                     	global	___awdiv@quotient
-  1246                           ___awdiv@quotient:	; 2 bytes @ 0x2
-  1247  0038                     	ds	2
-  1248  0038                     ?_motordePassoKLV:	; 1 bytes @ 0x4
-  1249  003A                     	global	motordePassoKLV@graus
-  1250                           motordePassoKLV@graus:	; 2 bytes @ 0x4
-  1251  003A                     	ds	2
-  1252  003A                     	global	motordePassoKLV@t
-  1253                           motordePassoKLV@t:	; 2 bytes @ 0x6
-  1254  003C                     	ds	2
-  1255  003C                     	global	motordePassoKLV@numPassos
-  1256                           motordePassoKLV@numPassos:	; 2 bytes @ 0x8
-  1257  003E                     	ds	2
-  1258  003E                     	global	motordePassoKLV@sentido
-  1259                           motordePassoKLV@sentido:	; 1 bytes @ 0xA
-  1260  0040                     	ds	1
-  1261  0040                     	global	motordePassoKLV@i
-  1262                           motordePassoKLV@i:	; 2 bytes @ 0xB
-  1263  0041                     	ds	2
-  1264  0041                     ;!
-  1265                           ;!Data Sizes:
-  1266                           ;!    Strings     0
-  1267                           ;!    Constant    0
-  1268                           ;!    Data        22
-  1269                           ;!    BSS         1
-  1270                           ;!    Persistent  0
-  1271                           ;!    Stack       0
-  1272                           ;!
-  1273                           ;!Auto Spaces:
-  1274                           ;!    Space          Size  Autos    Used
-  1275                           ;!    COMMON           14     12      12
-  1276                           ;!    BANK0            80     13      36
-  1277                           ;!    BANK1            80      0       0
-  1278                           ;!    BANK3            96      0       0
-  1279                           ;!    BANK2            96      0       0
-  1280                           
-  1281                           ;!
-  1282                           ;!Pointer List with Targets:
+  1136  004F                            ds      4
+  1137  004F                     
+  1138                           	file	"C:\Users\21193634\AppData\Local\Temp\s7eo."
+  1139                           	line	#
+  1140                           global btemp
+  1141                           psect inittext,class=CODE,delta=2
+  1142                           global init_fetch0,btemp
+  1143                           ;	Called with low address in FSR and high address in W
+  1144                           init_fetch0:
+  1145  055E                     	movf btemp,w
+  1146  055E  087E               	movwf pclath
+  1147  055F  008A               	movf btemp+1,w
+  1148  0560  087F               	movwf pc
+  1149  0561  0082               global init_ram0
+  1150                           ;Called with:
+  1151                           ;	high address of idata address in btemp 
+  1152                           ;	low address of idata address in btemp+1 
+  1153                           ;	low address of data in FSR
+  1154                           ;	high address + 1 of data in btemp-1
+  1155                           init_ram0:
+  1156  0562                     	fcall init_fetch0
+  1157  0562  120A  118A  255E  120A  118A  	movwf indf,f
+  1158  0567  0080               	incf fsr,f
+  1159  0568  0A84               	movf fsr,w
+  1160  0569  0804               	xorwf btemp-1,w
+  1161  056A  067D               	btfsc status,2
+  1162  056B  1903               	retlw 0
+  1163  056C  3400               	incf btemp+1,f
+  1164  056D  0AFF               	btfsc status,2
+  1165  056E  1903               	incf btemp,f
+  1166  056F  0AFE               	goto init_ram0
+  1167  0570  2D62               ; Initialize objects allocated to BANK0
+  1168                           psect cinit,class=CODE,delta=2,merge=1
+  1169                           global init_ram0, __pidataBANK0
+  1170                           	bcf	status, 7	;select IRP bank0
+  1171  07ED  1383               	movlw low(__pdataBANK0+20)
+  1172  07EE  3053               	movwf btemp-1,f
+  1173  07EF  00FD               	movlw high(__pidataBANK0)
+  1174  07F0  3005               	movwf btemp,f
+  1175  07F1  00FE               	movlw low(__pidataBANK0)
+  1176  07F2  3071               	movwf btemp+1,f
+  1177  07F3  00FF               	movlw low(__pdataBANK0)
+  1178  07F4  303F               	movwf fsr,f
+  1179  07F5  0084               	fcall init_ram0
+  1180  07F6  120A  118A  2562  120A  118A  	line	#
+  1181                           ; Clear objects allocated to BANK0
+  1182                           psect cinit,class=CODE,delta=2,merge=1
+  1183                           	clrf	((__pbssBANK0)+0)&07Fh
+  1184  07FB  01D5               psect cinit,class=CODE,delta=2,merge=1
+  1185                           global end_of_initialization,__end_of__initialization
+  1186                           
+  1187                           ;End of C runtime variable initialization code
+  1188                           
+  1189                           end_of_initialization:
+  1190  07FC                     __end_of__initialization:
+  1191  07FC                     clrf status
+  1192  07FC  0183               ljmp _main	;jump to C main() function
+  1193  07FD  120A  118A  2F0A   psect	cstackCOMMON,class=COMMON,space=1,noexec
+  1194                           global __pcstackCOMMON
+  1195                           __pcstackCOMMON:
+  1196  0070                     ?_motordePasso_klv_init:	; 1 bytes @ 0x0
+  1197  0070                     ?_delay:	; 1 bytes @ 0x0
+  1198  0070                     ?_main:	; 1 bytes @ 0x0
+  1199  0070                     	global	?___lmul
+  1200                           ?___lmul:	; 4 bytes @ 0x0
+  1201  0070                     	global	delay@t
+  1202                           delay@t:	; 2 bytes @ 0x0
+  1203  0070                     	global	motordePasso_klv_init@pulsosPorRevolucao
+  1204                           motordePasso_klv_init@pulsosPorRevolucao:	; 2 bytes @ 0x0
+  1205  0070                     	global	___lmul@multiplier
+  1206                           ___lmul@multiplier:	; 4 bytes @ 0x0
+  1207  0070                     	ds	2
+  1208  0070                     ??_motordePasso_klv_init:	; 1 bytes @ 0x2
+  1209  0072                     ??_delay:	; 1 bytes @ 0x2
+  1210  0072                     	ds	2
+  1211  0072                     	global	___lmul@multiplicand
+  1212                           ___lmul@multiplicand:	; 4 bytes @ 0x4
+  1213  0074                     	ds	4
+  1214  0074                     ??___lmul:	; 1 bytes @ 0x8
+  1215  0078                     	ds	1
+  1216  0078                     	global	___lmul@product
+  1217                           ___lmul@product:	; 4 bytes @ 0x9
+  1218  0079                     	ds	4
+  1219  0079                     ??___aldiv:	; 1 bytes @ 0xD
+  1220  007D                     	ds	1
+  1221  007D                     ??_main:	; 1 bytes @ 0xE
+  1222  007E                     psect	cstackBANK0,class=BANK0,space=1,noexec
+  1223                           global __pcstackBANK0
+  1224                           __pcstackBANK0:
+  1225  0020                     	global	?___aldiv
+  1226                           ?___aldiv:	; 4 bytes @ 0x0
+  1227  0020                     	global	___aldiv@divisor
+  1228                           ___aldiv@divisor:	; 4 bytes @ 0x0
+  1229  0020                     	ds	4
+  1230  0020                     	global	___aldiv@dividend
+  1231                           ___aldiv@dividend:	; 4 bytes @ 0x4
+  1232  0024                     	ds	4
+  1233  0024                     	global	___aldiv@counter
+  1234                           ___aldiv@counter:	; 1 bytes @ 0x8
+  1235  0028                     	ds	1
+  1236  0028                     	global	___aldiv@sign
+  1237                           ___aldiv@sign:	; 1 bytes @ 0x9
+  1238  0029                     	ds	1
+  1239  0029                     	global	___aldiv@quotient
+  1240                           ___aldiv@quotient:	; 4 bytes @ 0xA
+  1241  002A                     	ds	4
+  1242  002A                     ?_motordePassoKLV:	; 1 bytes @ 0xE
+  1243  002E                     	global	motordePassoKLV@graus
+  1244                           motordePassoKLV@graus:	; 4 bytes @ 0xE
+  1245  002E                     	ds	4
+  1246  002E                     	global	motordePassoKLV@t
+  1247                           motordePassoKLV@t:	; 2 bytes @ 0x12
+  1248  0032                     	ds	2
+  1249  0032                     ??_motordePassoKLV:	; 1 bytes @ 0x14
+  1250  0034                     	ds	4
+  1251  0034                     	global	motordePassoKLV@numPassos
+  1252                           motordePassoKLV@numPassos:	; 4 bytes @ 0x18
+  1253  0038                     	ds	4
+  1254  0038                     	global	motordePassoKLV@sentido
+  1255                           motordePassoKLV@sentido:	; 1 bytes @ 0x1C
+  1256  003C                     	ds	1
+  1257  003C                     	global	motordePassoKLV@i
+  1258                           motordePassoKLV@i:	; 2 bytes @ 0x1D
+  1259  003D                     	ds	2
+  1260  003D                     ;!
+  1261                           ;!Data Sizes:
+  1262                           ;!    Strings     0
+  1263                           ;!    Constant    0
+  1264                           ;!    Data        20
+  1265                           ;!    BSS         1
+  1266                           ;!    Persistent  2
+  1267                           ;!    Stack       0
+  1268                           ;!
+  1269                           ;!Auto Spaces:
+  1270                           ;!    Space          Size  Autos    Used
+  1271                           ;!    COMMON           14     14      14
+  1272                           ;!    BANK0            80     31      54
+  1273                           ;!    BANK1            80      0       0
+  1274                           ;!    BANK3            96      0       0
+  1275                           ;!    BANK2            96      0       0
+  1276                           
+  1277                           ;!
+  1278                           ;!Pointer List with Targets:
+  1279                           ;!
+  1280                           ;!    None.
+  1281                           
+  1282                           
   1283                           ;!
-  1284                           ;!    None.
-  1285                           
-  1286                           
-  1287                           ;!
-  1288                           ;!Critical Paths under _main in COMMON
-  1289                           ;!
-  1290                           ;!    _main->_motordePassoKLV
-  1291                           ;!    _motordePassoKLV->___awdiv
-  1292                           ;!    ___awdiv->___wmul
+  1284                           ;!Critical Paths under _main in COMMON
+  1285                           ;!
+  1286                           ;!    _motordePassoKLV->___aldiv
+  1287                           ;!    ___aldiv->___lmul
+  1288                           ;!
+  1289                           ;!Critical Paths under _main in BANK0
+  1290                           ;!
+  1291                           ;!    _main->_motordePassoKLV
+  1292                           ;!    _motordePassoKLV->___aldiv
   1293                           ;!
-  1294                           ;!Critical Paths under _main in BANK0
+  1294                           ;!Critical Paths under _main in BANK1
   1295                           ;!
-  1296                           ;!    _main->_motordePassoKLV
-  1297                           ;!    _motordePassoKLV->___awdiv
-  1298                           ;!
-  1299                           ;!Critical Paths under _main in BANK1
-  1300                           ;!
-  1301                           ;!    None.
-  1302                           ;!
-  1303                           ;!Critical Paths under _main in BANK3
-  1304                           ;!
-  1305                           ;!    None.
-  1306                           ;!
-  1307                           ;!Critical Paths under _main in BANK2
-  1308                           ;!
-  1309                           ;!    None.
-  1310                           
-  1311 ;;
-  1312 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
-  1313 ;;
-  1314                           
-  1315                           ;!
-  1316                           ;!Call Graph Tables:
-  1317                           ;!
-  1318                           ;! ---------------------------------------------------------------------------------
-  1319                           ;! (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+  1296                           ;!    None.
+  1297                           ;!
+  1298                           ;!Critical Paths under _main in BANK3
+  1299                           ;!
+  1300                           ;!    None.
+  1301                           ;!
+  1302                           ;!Critical Paths under _main in BANK2
+  1303                           ;!
+  1304                           ;!    None.
+  1305                           
+  1306 ;;
+  1307 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+  1308 ;;
+  1309                           
+  1310                           ;!
+  1311                           ;!Call Graph Tables:
+  1312                           ;!
+  1313                           ;! ---------------------------------------------------------------------------------
+  1314                           ;! (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+  1315                           ;! ---------------------------------------------------------------------------------
+  1316                           ;! (0) _main                                                 0     0      0    3385
+  1317                           ;!                              _delay
+  1318                           ;!                    _motordePassoKLV
+  1319                           ;!              _motordePasso_klv_init
   1320                           ;! ---------------------------------------------------------------------------------
-  1321                           ;! (0) _main                                                 0     0      0    2451
-  1322                           ;!                              _delay
-  1323                           ;!                    _motordePassoKLV
-  1324                           ;!              _motordePasso_klv_init
-  1325                           ;! ---------------------------------------------------------------------------------
-  1326                           ;! (1) _motordePasso_klv_init                                2     0      2      98
-  1327                           ;!                                              0 COMMON     2     0      2
-  1328                           ;! ---------------------------------------------------------------------------------
-  1329                           ;! (1) _motordePassoKLV                                     10     6      4    2026
-  1330                           ;!                                             11 COMMON     1     1      0
-  1331                           ;!                                              4 BANK0      9     5      4
-  1332                           ;!                            ___awdiv
-  1333                           ;!                             ___wmul
-  1334                           ;!                              _delay
+  1321                           ;! (1) _motordePasso_klv_init                                2     0      2      98
+  1322                           ;!                                              0 COMMON     2     0      2
+  1323                           ;! ---------------------------------------------------------------------------------
+  1324                           ;! (1) _motordePassoKLV                                     17    11      6    2580
+  1325                           ;!                                             14 BANK0     17    11      6
+  1326                           ;!                            ___aldiv
+  1327                           ;!                             ___lmul
+  1328                           ;!                              _delay
+  1329                           ;! ---------------------------------------------------------------------------------
+  1330                           ;! (2) _delay                                                3     1      2     707
+  1331                           ;!                                              0 COMMON     3     1      2
+  1332                           ;! ---------------------------------------------------------------------------------
+  1333                           ;! (2) ___lmul                                              13     5      8     244
+  1334                           ;!                                              0 COMMON    13     5      8
   1335                           ;! ---------------------------------------------------------------------------------
-  1336                           ;! (2) _delay                                                3     1      2     327
-  1337                           ;!                                              0 COMMON     3     1      2
-  1338                           ;! ---------------------------------------------------------------------------------
-  1339                           ;! (2) ___wmul                                               6     2      4     244
-  1340                           ;!                                              0 COMMON     6     2      4
-  1341                           ;! ---------------------------------------------------------------------------------
-  1342                           ;! (2) ___awdiv                                              9     5      4    1060
-  1343                           ;!                                              6 COMMON     5     1      4
-  1344                           ;!                                              0 BANK0      4     4      0
-  1345                           ;!                             ___wmul (ARG)
-  1346                           ;! ---------------------------------------------------------------------------------
-  1347                           ;! Estimated maximum stack depth 2
-  1348                           ;! ---------------------------------------------------------------------------------
-  1349                           ;!
-  1350                           ;! Call Graph Graphs:
-  1351                           ;!
-  1352                           ;! _main (ROOT)
-  1353                           ;!   _delay
-  1354                           ;!   _motordePassoKLV
-  1355                           ;!     ___awdiv
-  1356                           ;!       ___wmul (ARG)
-  1357                           ;!     ___wmul
-  1358                           ;!     _delay
-  1359                           ;!   _motordePasso_klv_init
-  1360                           ;!
-  1361                           
-  1362                           ;! Address spaces:
-  1363                           
-  1364                           ;!Name               Size   Autos  Total    Cost      Usage
-  1365                           ;!BANK3               60      0       0       9        0.0%
-  1366                           ;!BITBANK3            60      0       0       8        0.0%
-  1367                           ;!SFR3                 0      0       0       4        0.0%
-  1368                           ;!BITSFR3              0      0       0       4        0.0%
-  1369                           ;!BANK2               60      0       0      11        0.0%
-  1370                           ;!BITBANK2            60      0       0      10        0.0%
-  1371                           ;!SFR2                 0      0       0       5        0.0%
-  1372                           ;!BITSFR2              0      0       0       5        0.0%
-  1373                           ;!BANK1               50      0       0       7        0.0%
-  1374                           ;!BITBANK1            50      0       0       6        0.0%
-  1375                           ;!SFR1                 0      0       0       2        0.0%
-  1376                           ;!BITSFR1              0      0       0       2        0.0%
-  1377                           ;!BANK0               50      D      24       5       45.0%
-  1378                           ;!BITBANK0            50      0       0       4        0.0%
-  1379                           ;!SFR0                 0      0       0       1        0.0%
-  1380                           ;!BITSFR0              0      0       0       1        0.0%
-  1381                           ;!COMMON               E      C       C       1       85.7%
-  1382                           ;!BITCOMMON            E      0       0       0        0.0%
-  1383                           ;!CODE                 0      0       0       0        0.0%
-  1384                           ;!DATA                 0      0      30      12        0.0%
-  1385                           ;!ABS                  0      0      30       3        0.0%
-  1386                           ;!NULL                 0      0       0       0        0.0%
-  1387                           ;!STACK                0      0       0       2        0.0%
-  1388                           ;!EEDATA             100      0       0       0        0.0%
-  1389                           
-  1390                           	global	_main
-  1391                           
-  1392 ;; *************** function _main *****************
-  1393 ;; Defined at:
-  1394 ;;		line 14 in file "main.c"
-  1395 ;; Parameters:    Size  Location     Type
-  1396 ;;		None
-  1397 ;; Auto vars:     Size  Location     Type
-  1398 ;;		None
-  1399 ;; Return value:  Size  Location     Type
-  1400 ;;                  1    wreg      void 
-  1401 ;; Registers used:
-  1402 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
-  1403 ;; Tracked objects:
-  1404 ;;		On entry : B00/0
-  1405 ;;		On exit  : 0/0
-  1406 ;;		Unchanged: 0/0
-  1407 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1408 ;;      Params:         0       0       0       0       0
-  1409 ;;      Locals:         0       0       0       0       0
-  1410 ;;      Temps:          0       0       0       0       0
-  1411 ;;      Totals:         0       0       0       0       0
-  1412 ;;Total ram usage:        0 bytes
-  1413 ;; Hardware stack levels required when called:    2
-  1414 ;; This function calls:
-  1415 ;;		_delay
-  1416 ;;		_motordePassoKLV
-  1417 ;;		_motordePasso_klv_init
-  1418 ;; This function is called by:
-  1419 ;;		Startup code after reset
-  1420 ;; This function uses a non-reentrant model
-  1421 ;;
-  1422                           psect	maintext,global,class=CODE,delta=2,split=1,group=0
-  1423                           	file	"main.c"
-  1424                           	line	14
-  1425                           global __pmaintext
-  1426                           __pmaintext:	;psect for function _main
-  1427  06D8                     psect	maintext
-  1428                           	file	"main.c"
-  1429                           	line	14
-  1430                           	global	__size_of_main
-  1431                           	__size_of_main	equ	__end_of_main-_main
-  1432  004A                     	
-  1433                           _main:	
-  1434  06D8                     ;incstack = 0
-  1435                           	opt	stack 6
-  1436                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
-  1437                           	line	16
-  1438                           	
-  1439                           l1050:	
-  1440  06D8                     ;main.c: 16:     motordePasso_klv_init ( 100 );
-  1441                           	movlw	064h
-  1442  06D8  3064               	movwf	(motordePasso_klv_init@pulsosPorRevolucao)
-  1443  06D9  00F0               	movlw	0
-  1444  06DA  3000               	movwf	((motordePasso_klv_init@pulsosPorRevolucao))+1
-  1445  06DB  00F1               	fcall	_motordePasso_klv_init
-  1446  06DC  120A  118A  265F  120A  118A  	line	17
-  1447                           ;main.c: 17:     delay(3000);
-  1448                           	movlw	0B8h
-  1449  06E1  30B8               	movwf	(delay@t)
-  1450  06E2  00F0               	movlw	0Bh
-  1451  06E3  300B               	movwf	((delay@t))+1
-  1452  06E4  00F1               	fcall	_delay
-  1453  06E5  120A  118A  2699  120A  118A  	goto	l1052
-  1454  06EA  2EEB               	line	19
-  1455                           ;main.c: 19:     while( 1 )
-  1456                           	
-  1457                           l91:	
-  1458  06EB                     	line	21
-  1459                           	
-  1460                           l1052:	
-  1461  06EB                     ;main.c: 20:     {;main.c: 21:         motordePassoKLV( 1, 90, 100 );
-  1462                           	movlw	05Ah
-  1463  06EB  305A               	bcf	status, 5	;RP0=0, select bank0
-  1464  06EC  1283               	bcf	status, 6	;RP1=0, select bank0
-  1465  06ED  1303               	movwf	(motordePassoKLV@graus)
-  1466  06EE  00BA               	movlw	0
-  1467  06EF  3000               	movwf	((motordePassoKLV@graus))+1
-  1468  06F0  00BB               	movlw	064h
-  1469  06F1  3064               	movwf	(motordePassoKLV@t)
-  1470  06F2  00BC               	movlw	0
-  1471  06F3  3000               	movwf	((motordePassoKLV@t))+1
-  1472  06F4  00BD               	movlw	low(01h)
-  1473  06F5  3001               	fcall	_motordePassoKLV
-  1474  06F6  120A  118A  2722  120A  118A  	line	22
-  1475                           	
-  1476                           l1054:	
-  1477  06FB                     ;main.c: 22:         delay(3000);
-  1478                           	movlw	0B8h
-  1479  06FB  30B8               	movwf	(delay@t)
-  1480  06FC  00F0               	movlw	0Bh
-  1481  06FD  300B               	movwf	((delay@t))+1
-  1482  06FE  00F1               	fcall	_delay
-  1483  06FF  120A  118A  2699  120A  118A  	line	23
-  1484                           ;main.c: 23:         motordePassoKLV( -1, 180, 20 );
-  1485                           	movlw	0B4h
-  1486  0704  30B4               	bcf	status, 5	;RP0=0, select bank0
-  1487  0705  1283               	bcf	status, 6	;RP1=0, select bank0
-  1488  0706  1303               	movwf	(motordePassoKLV@graus)
-  1489  0707  00BA               	movlw	0
-  1490  0708  3000               	movwf	((motordePassoKLV@graus))+1
-  1491  0709  00BB               	movlw	014h
-  1492  070A  3014               	movwf	(motordePassoKLV@t)
-  1493  070B  00BC               	movlw	0
-  1494  070C  3000               	movwf	((motordePassoKLV@t))+1
-  1495  070D  00BD               	movlw	low(0FFh)
-  1496  070E  30FF               	fcall	_motordePassoKLV
-  1497  070F  120A  118A  2722  120A  118A  	line	24
-  1498                           	
-  1499                           l1056:	
-  1500  0714                     ;main.c: 24:         delay(3000);
-  1501                           	movlw	0B8h
-  1502  0714  30B8               	movwf	(delay@t)
-  1503  0715  00F0               	movlw	0Bh
-  1504  0716  300B               	movwf	((delay@t))+1
-  1505  0717  00F1               	fcall	_delay
-  1506  0718  120A  118A  2699  120A  118A  	goto	l1052
-  1507  071D  2EEB               	line	25
-  1508                           ;main.c: 25:     }
-  1509                           	
-  1510                           l92:	
-  1511  071E                     	goto	l1052
-  1512  071E  2EEB               	
-  1513                           l93:	
-  1514  071F                     	line	26
-  1515                           	
-  1516                           l94:	
-  1517  071F                     	global	start
-  1518                           	ljmp	start
-  1519  071F  120A  118A  2800   	opt stack 0
-  1520                           GLOBAL	__end_of_main
-  1521                           	__end_of_main:
-  1522  0722                     	signat	_main,89
-  1523                           	global	_motordePasso_klv_init
-  1524                           
-  1525 ;; *************** function _motordePasso_klv_init *****************
-  1526 ;; Defined at:
-  1527 ;;		line 17 in file "motordePassoKLV.c"
-  1528 ;; Parameters:    Size  Location     Type
-  1529 ;;  pulsosPorRev    2    0[COMMON] int 
-  1530 ;; Auto vars:     Size  Location     Type
-  1531 ;;		None
-  1532 ;; Return value:  Size  Location     Type
-  1533 ;;                  1    wreg      void 
-  1534 ;; Registers used:
-  1535 ;;		wreg
-  1536 ;; Tracked objects:
-  1537 ;;		On entry : 0/0
-  1538 ;;		On exit  : 0/0
-  1539 ;;		Unchanged: 0/0
-  1540 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1541 ;;      Params:         2       0       0       0       0
-  1542 ;;      Locals:         0       0       0       0       0
-  1543 ;;      Temps:          0       0       0       0       0
-  1544 ;;      Totals:         2       0       0       0       0
-  1545 ;;Total ram usage:        2 bytes
-  1546 ;; Hardware stack levels used:    1
-  1547 ;; This function calls:
-  1548 ;;		Nothing
-  1549 ;; This function is called by:
-  1550 ;;		_main
-  1551 ;; This function uses a non-reentrant model
-  1552 ;;
-  1553                           psect	text1,local,class=CODE,delta=2,merge=1,group=0
-  1554                           	file	"motordePassoKLV.c"
-  1555                           	line	17
-  1556                           global __ptext1
-  1557                           __ptext1:	;psect for function _motordePasso_klv_init
-  1558  065F                     psect	text1
-  1559                           	file	"motordePassoKLV.c"
-  1560                           	line	17
-  1561                           	global	__size_of_motordePasso_klv_init
-  1562                           	__size_of_motordePasso_klv_init	equ	__end_of_motordePasso_klv_init-_motordePasso_klv_in
+  1336                           ;! (2) ___aldiv                                             15     7      8     452
+  1337                           ;!                                             13 COMMON     1     1      0
+  1338                           ;!                                              0 BANK0     14     6      8
+  1339                           ;!                             ___lmul (ARG)
+  1340                           ;! ---------------------------------------------------------------------------------
+  1341                           ;! Estimated maximum stack depth 2
+  1342                           ;! ---------------------------------------------------------------------------------
+  1343                           ;!
+  1344                           ;! Call Graph Graphs:
+  1345                           ;!
+  1346                           ;! _main (ROOT)
+  1347                           ;!   _delay
+  1348                           ;!   _motordePassoKLV
+  1349                           ;!     ___aldiv
+  1350                           ;!       ___lmul (ARG)
+  1351                           ;!     ___lmul
+  1352                           ;!     _delay
+  1353                           ;!   _motordePasso_klv_init
+  1354                           ;!
+  1355                           
+  1356                           ;! Address spaces:
+  1357                           
+  1358                           ;!Name               Size   Autos  Total    Cost      Usage
+  1359                           ;!BANK3               60      0       0       9        0.0%
+  1360                           ;!BITBANK3            60      0       0       8        0.0%
+  1361                           ;!SFR3                 0      0       0       4        0.0%
+  1362                           ;!BITSFR3              0      0       0       4        0.0%
+  1363                           ;!BANK2               60      0       0      11        0.0%
+  1364                           ;!BITBANK2            60      0       0      10        0.0%
+  1365                           ;!SFR2                 0      0       0       5        0.0%
+  1366                           ;!BITSFR2              0      0       0       5        0.0%
+  1367                           ;!BANK1               50      0       0       7        0.0%
+  1368                           ;!BITBANK1            50      0       0       6        0.0%
+  1369                           ;!SFR1                 0      0       0       2        0.0%
+  1370                           ;!BITSFR1              0      0       0       2        0.0%
+  1371                           ;!BANK0               50     1F      36       5       67.5%
+  1372                           ;!BITBANK0            50      0       0       4        0.0%
+  1373                           ;!SFR0                 0      0       0       1        0.0%
+  1374                           ;!BITSFR0              0      0       0       1        0.0%
+  1375                           ;!COMMON               E      E       E       1      100.0%
+  1376                           ;!BITCOMMON            E      0       0       0        0.0%
+  1377                           ;!CODE                 0      0       0       0        0.0%
+  1378                           ;!DATA                 0      0      44      12        0.0%
+  1379                           ;!ABS                  0      0      44       3        0.0%
+  1380                           ;!NULL                 0      0       0       0        0.0%
+  1381                           ;!STACK                0      0       0       2        0.0%
+  1382                           ;!EEDATA             100      0       0       0        0.0%
+  1383                           
+  1384                           	global	_main
+  1385                           
+  1386 ;; *************** function _main *****************
+  1387 ;; Defined at:
+  1388 ;;		line 14 in file "main.c"
+  1389 ;; Parameters:    Size  Location     Type
+  1390 ;;		None
+  1391 ;; Auto vars:     Size  Location     Type
+  1392 ;;		None
+  1393 ;; Return value:  Size  Location     Type
+  1394 ;;                  1    wreg      void 
+  1395 ;; Registers used:
+  1396 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+  1397 ;; Tracked objects:
+  1398 ;;		On entry : B00/0
+  1399 ;;		On exit  : 0/0
+  1400 ;;		Unchanged: 0/0
+  1401 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1402 ;;      Params:         0       0       0       0       0
+  1403 ;;      Locals:         0       0       0       0       0
+  1404 ;;      Temps:          0       0       0       0       0
+  1405 ;;      Totals:         0       0       0       0       0
+  1406 ;;Total ram usage:        0 bytes
+  1407 ;; Hardware stack levels required when called:    2
+  1408 ;; This function calls:
+  1409 ;;		_delay
+  1410 ;;		_motordePassoKLV
+  1411 ;;		_motordePasso_klv_init
+  1412 ;; This function is called by:
+  1413 ;;		Startup code after reset
+  1414 ;; This function uses a non-reentrant model
+  1415 ;;
+  1416                           psect	maintext,global,class=CODE,delta=2,split=1,group=0
+  1417                           	file	"main.c"
+  1418                           	line	14
+  1419                           global __pmaintext
+  1420                           __pmaintext:	;psect for function _main
+  1421  070A                     psect	maintext
+  1422                           	file	"main.c"
+  1423                           	line	14
+  1424                           	global	__size_of_main
+  1425                           	__size_of_main	equ	__end_of_main-_main
+  1426  00E3                     	
+  1427                           _main:	
+  1428  070A                     ;incstack = 0
+  1429                           	opt	stack 6
+  1430                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
+  1431                           	line	16
+  1432                           	
+  1433                           l1020:	
+  1434  070A                     ;main.c: 16:     motordePasso_klv_init ( 1024 );
+  1435                           	movlw	0
+  1436  070A  3000               	movwf	(motordePasso_klv_init@pulsosPorRevolucao)
+  1437  070B  00F0               	movlw	04h
+  1438  070C  3004               	movwf	((motordePasso_klv_init@pulsosPorRevolucao))+1
+  1439  070D  00F1               	fcall	_motordePasso_klv_init
+  1440  070E  120A  118A  254D  120A  118A  	line	17
+  1441                           ;main.c: 17:     delay(1000);
+  1442                           	movlw	0E8h
+  1443  0713  30E8               	movwf	(delay@t)
+  1444  0714  00F0               	movlw	03h
+  1445  0715  3003               	movwf	((delay@t))+1
+  1446  0716  00F1               	fcall	_delay
+  1447  0717  120A  118A  2585  120A  118A  	goto	l1022
+  1448  071C  2F1D               	line	19
+  1449                           ;main.c: 19:     while( 1 )
+  1450                           	
+  1451                           l91:	
+  1452  071D                     	line	21
+  1453                           	
+  1454                           l1022:	
+  1455  071D                     ;main.c: 20:     {;main.c: 21:         motordePassoKLV( 1, 126, 1 );
+  1456                           	movlw	0
+  1457  071D  3000               	bcf	status, 5	;RP0=0, select bank0
+  1458  071E  1283               	bcf	status, 6	;RP1=0, select bank0
+  1459  071F  1303               	movwf	(motordePassoKLV@graus+3)
+  1460  0720  00B1               	movlw	0
+  1461  0721  3000               	movwf	(motordePassoKLV@graus+2)
+  1462  0722  00B0               	movlw	0
+  1463  0723  3000               	movwf	(motordePassoKLV@graus+1)
+  1464  0724  00AF               	movlw	07Eh
+  1465  0725  307E               	movwf	(motordePassoKLV@graus)
+  1466  0726  00AE               
+  1467                           	movlw	01h
+  1468  0727  3001               	movwf	(motordePassoKLV@t)
+  1469  0728  00B2               	movlw	0
+  1470  0729  3000               	movwf	((motordePassoKLV@t))+1
+  1471  072A  00B3               	movlw	low(01h)
+  1472  072B  3001               	fcall	_motordePassoKLV
+  1473  072C  120A  118A  25E6  120A  118A  	line	22
+  1474                           	
+  1475                           l1024:	
+  1476  0731                     ;main.c: 22:         delay(1000);
+  1477                           	movlw	0E8h
+  1478  0731  30E8               	movwf	(delay@t)
+  1479  0732  00F0               	movlw	03h
+  1480  0733  3003               	movwf	((delay@t))+1
+  1481  0734  00F1               	fcall	_delay
+  1482  0735  120A  118A  2585  120A  118A  	line	23
+  1483                           ;main.c: 23:         motordePassoKLV( 1, 126, 1 );
+  1484                           	movlw	0
+  1485  073A  3000               	bcf	status, 5	;RP0=0, select bank0
+  1486  073B  1283               	bcf	status, 6	;RP1=0, select bank0
+  1487  073C  1303               	movwf	(motordePassoKLV@graus+3)
+  1488  073D  00B1               	movlw	0
+  1489  073E  3000               	movwf	(motordePassoKLV@graus+2)
+  1490  073F  00B0               	movlw	0
+  1491  0740  3000               	movwf	(motordePassoKLV@graus+1)
+  1492  0741  00AF               	movlw	07Eh
+  1493  0742  307E               	movwf	(motordePassoKLV@graus)
+  1494  0743  00AE               
+  1495                           	movlw	01h
+  1496  0744  3001               	movwf	(motordePassoKLV@t)
+  1497  0745  00B2               	movlw	0
+  1498  0746  3000               	movwf	((motordePassoKLV@t))+1
+  1499  0747  00B3               	movlw	low(01h)
+  1500  0748  3001               	fcall	_motordePassoKLV
+  1501  0749  120A  118A  25E6  120A  118A  	line	24
+  1502                           	
+  1503                           l1026:	
+  1504  074E                     ;main.c: 24:         delay(1000);
+  1505                           	movlw	0E8h
+  1506  074E  30E8               	movwf	(delay@t)
+  1507  074F  00F0               	movlw	03h
+  1508  0750  3003               	movwf	((delay@t))+1
+  1509  0751  00F1               	fcall	_delay
+  1510  0752  120A  118A  2585  120A  118A  	line	25
+  1511                           	
+  1512                           l1028:	
+  1513  0757                     ;main.c: 25:         motordePassoKLV( 1, 126, 1 );
+  1514                           	movlw	0
+  1515  0757  3000               	bcf	status, 5	;RP0=0, select bank0
+  1516  0758  1283               	bcf	status, 6	;RP1=0, select bank0
+  1517  0759  1303               	movwf	(motordePassoKLV@graus+3)
+  1518  075A  00B1               	movlw	0
+  1519  075B  3000               	movwf	(motordePassoKLV@graus+2)
+  1520  075C  00B0               	movlw	0
+  1521  075D  3000               	movwf	(motordePassoKLV@graus+1)
+  1522  075E  00AF               	movlw	07Eh
+  1523  075F  307E               	movwf	(motordePassoKLV@graus)
+  1524  0760  00AE               
+  1525                           	movlw	01h
+  1526  0761  3001               	movwf	(motordePassoKLV@t)
+  1527  0762  00B2               	movlw	0
+  1528  0763  3000               	movwf	((motordePassoKLV@t))+1
+  1529  0764  00B3               	movlw	low(01h)
+  1530  0765  3001               	fcall	_motordePassoKLV
+  1531  0766  120A  118A  25E6  120A  118A  	line	26
+  1532                           ;main.c: 26:         delay(1000);
+  1533                           	movlw	0E8h
+  1534  076B  30E8               	movwf	(delay@t)
+  1535  076C  00F0               	movlw	03h
+  1536  076D  3003               	movwf	((delay@t))+1
+  1537  076E  00F1               	fcall	_delay
+  1538  076F  120A  118A  2585  120A  118A  	line	27
+  1539                           	
+  1540                           l1030:	
+  1541  0774                     ;main.c: 27:         motordePassoKLV( 1, 126, 1 );
+  1542                           	movlw	0
+  1543  0774  3000               	bcf	status, 5	;RP0=0, select bank0
+  1544  0775  1283               	bcf	status, 6	;RP1=0, select bank0
+  1545  0776  1303               	movwf	(motordePassoKLV@graus+3)
+  1546  0777  00B1               	movlw	0
+  1547  0778  3000               	movwf	(motordePassoKLV@graus+2)
+  1548  0779  00B0               	movlw	0
+  1549  077A  3000               	movwf	(motordePassoKLV@graus+1)
+  1550  077B  00AF               	movlw	07Eh
+  1551  077C  307E               	movwf	(motordePassoKLV@graus)
+  1552  077D  00AE               
+  1553                           	movlw	01h
+  1554  077E  3001               	movwf	(motordePassoKLV@t)
+  1555  077F  00B2               	movlw	0
+  1556  0780  3000               	movwf	((motordePassoKLV@t))+1
+  1557  0781  00B3               	movlw	low(01h)
+  1558  0782  3001               	fcall	_motordePassoKLV
+  1559  0783  120A  118A  25E6  120A  118A  	line	28
+  1560                           	
+  1561                           l1032:	
+  1562  0788                     ;main.c: 28:         delay(1000);
+  1563                           	movlw	0E8h
+  1564  0788  30E8               	movwf	(delay@t)
+  1565  0789  00F0               	movlw	03h
+  1566  078A  3003               	movwf	((delay@t))+1
+  1567  078B  00F1               	fcall	_delay
+  1568  078C  120A  118A  2585  120A  118A  	line	29
+  1569                           ;main.c: 29:         motordePassoKLV( 1, 252, 1 );
+  1570                           	movlw	0
+  1571  0791  3000               	bcf	status, 5	;RP0=0, select bank0
+  1572  0792  1283               	bcf	status, 6	;RP1=0, select bank0
+  1573  0793  1303               	movwf	(motordePassoKLV@graus+3)
+  1574  0794  00B1               	movlw	0
+  1575  0795  3000               	movwf	(motordePassoKLV@graus+2)
+  1576  0796  00B0               	movlw	0
+  1577  0797  3000               	movwf	(motordePassoKLV@graus+1)
+  1578  0798  00AF               	movlw	0FCh
+  1579  0799  30FC               	movwf	(motordePassoKLV@graus)
+  1580  079A  00AE               
+  1581                           	movlw	01h
+  1582  079B  3001               	movwf	(motordePassoKLV@t)
+  1583  079C  00B2               	movlw	0
+  1584  079D  3000               	movwf	((motordePassoKLV@t))+1
+  1585  079E  00B3               	movlw	low(01h)
+  1586  079F  3001               	fcall	_motordePassoKLV
+  1587  07A0  120A  118A  25E6  120A  118A  	line	30
+  1588                           	
+  1589                           l1034:	
+  1590  07A5                     ;main.c: 30:         delay(1000);
+  1591                           	movlw	0E8h
+  1592  07A5  30E8               	movwf	(delay@t)
+  1593  07A6  00F0               	movlw	03h
+  1594  07A7  3003               	movwf	((delay@t))+1
+  1595  07A8  00F1               	fcall	_delay
+  1596  07A9  120A  118A  2585  120A  118A  	line	31
+  1597                           	
+  1598                           l1036:	
+  1599  07AE                     ;main.c: 31:         motordePassoKLV( 1, 252, 1 );
+  1600                           	movlw	0
+  1601  07AE  3000               	bcf	status, 5	;RP0=0, select bank0
+  1602  07AF  1283               	bcf	status, 6	;RP1=0, select bank0
+  1603  07B0  1303               	movwf	(motordePassoKLV@graus+3)
+  1604  07B1  00B1               	movlw	0
+  1605  07B2  3000               	movwf	(motordePassoKLV@graus+2)
+  1606  07B3  00B0               	movlw	0
+  1607  07B4  3000               	movwf	(motordePassoKLV@graus+1)
+  1608  07B5  00AF               	movlw	0FCh
+  1609  07B6  30FC               	movwf	(motordePassoKLV@graus)
+  1610  07B7  00AE               
+  1611                           	movlw	01h
+  1612  07B8  3001               	movwf	(motordePassoKLV@t)
+  1613  07B9  00B2               	movlw	0
+  1614  07BA  3000               	movwf	((motordePassoKLV@t))+1
+  1615  07BB  00B3               	movlw	low(01h)
+  1616  07BC  3001               	fcall	_motordePassoKLV
+  1617  07BD  120A  118A  25E6  120A  118A  	line	32
+  1618                           ;main.c: 32:         delay(1000);
+  1619                           	movlw	0E8h
+  1620  07C2  30E8               	movwf	(delay@t)
+  1621  07C3  00F0               	movlw	03h
+  1622  07C4  3003               	movwf	((delay@t))+1
+  1623  07C5  00F1               	fcall	_delay
+  1624  07C6  120A  118A  2585  120A  118A  	line	33
+  1625                           	
+  1626                           l1038:	
+  1627  07CB                     ;main.c: 33:         motordePassoKLV( 1, 504, 1 );
+  1628                           	movlw	0
+  1629  07CB  3000               	bcf	status, 5	;RP0=0, select bank0
+  1630  07CC  1283               	bcf	status, 6	;RP1=0, select bank0
+  1631  07CD  1303               	movwf	(motordePassoKLV@graus+3)
+  1632  07CE  00B1               	movlw	0
+  1633  07CF  3000               	movwf	(motordePassoKLV@graus+2)
+  1634  07D0  00B0               	movlw	01h
+  1635  07D1  3001               	movwf	(motordePassoKLV@graus+1)
+  1636  07D2  00AF               	movlw	0F8h
+  1637  07D3  30F8               	movwf	(motordePassoKLV@graus)
+  1638  07D4  00AE               
+  1639                           	movlw	01h
+  1640  07D5  3001               	movwf	(motordePassoKLV@t)
+  1641  07D6  00B2               	movlw	0
+  1642  07D7  3000               	movwf	((motordePassoKLV@t))+1
+  1643  07D8  00B3               	movlw	low(01h)
+  1644  07D9  3001               	fcall	_motordePassoKLV
+  1645  07DA  120A  118A  25E6  120A  118A  	line	34
+  1646                           	
+  1647                           l1040:	
+  1648  07DF                     ;main.c: 34:         delay(1000);
+  1649                           	movlw	0E8h
+  1650  07DF  30E8               	movwf	(delay@t)
+  1651  07E0  00F0               	movlw	03h
+  1652  07E1  3003               	movwf	((delay@t))+1
+  1653  07E2  00F1               	fcall	_delay
+  1654  07E3  120A  118A  2585  120A  118A  	goto	l1022
+  1655  07E8  2F1D               	line	35
+  1656                           ;main.c: 35:     }
+  1657                           	
+  1658                           l92:	
+  1659  07E9                     	goto	l1022
+  1660  07E9  2F1D               	
+  1661                           l93:	
+  1662  07EA                     	line	36
+  1663                           	
+  1664                           l94:	
+  1665  07EA                     	global	start
+  1666                           	ljmp	start
+  1667  07EA  120A  118A  2800   	opt stack 0
+  1668                           GLOBAL	__end_of_main
+  1669                           	__end_of_main:
+  1670  07ED                     	signat	_main,89
+  1671                           	global	_motordePasso_klv_init
+  1672                           
+  1673 ;; *************** function _motordePasso_klv_init *****************
+  1674 ;; Defined at:
+  1675 ;;		line 17 in file "motordePassoKLV.c"
+  1676 ;; Parameters:    Size  Location     Type
+  1677 ;;  pulsosPorRev    2    0[COMMON] int 
+  1678 ;; Auto vars:     Size  Location     Type
+  1679 ;;		None
+  1680 ;; Return value:  Size  Location     Type
+  1681 ;;                  1    wreg      void 
+  1682 ;; Registers used:
+  1683 ;;		wreg
+  1684 ;; Tracked objects:
+  1685 ;;		On entry : 0/0
+  1686 ;;		On exit  : 0/0
+  1687 ;;		Unchanged: 0/0
+  1688 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1689 ;;      Params:         2       0       0       0       0
+  1690 ;;      Locals:         0       0       0       0       0
+  1691 ;;      Temps:          0       0       0       0       0
+  1692 ;;      Totals:         2       0       0       0       0
+  1693 ;;Total ram usage:        2 bytes
+  1694 ;; Hardware stack levels used:    1
+  1695 ;; This function calls:
+  1696 ;;		Nothing
+  1697 ;; This function is called by:
+  1698 ;;		_main
+  1699 ;; This function uses a non-reentrant model
+  1700 ;;
+  1701                           psect	text1,local,class=CODE,delta=2,merge=1,group=0
+  1702                           	file	"motordePassoKLV.c"
+  1703                           	line	17
+  1704                           global __ptext1
+  1705                           __ptext1:	;psect for function _motordePasso_klv_init
+  1706  054D                     psect	text1
+  1707                           	file	"motordePassoKLV.c"
+  1708                           	line	17
+  1709                           	global	__size_of_motordePasso_klv_init
+  1710                           	__size_of_motordePasso_klv_init	equ	__end_of_motordePasso_klv_init-_motordePasso_klv_in
                                  it
-  1563  0011                     	
-  1564                           _motordePasso_klv_init:	
-  1565  065F                     ;incstack = 0
-  1566                           	opt	stack 7
-  1567                           ; Regs used in _motordePasso_klv_init: [wreg]
-  1568                           	line	19
-  1569                           	
-  1570                           l994:	
-  1571  065F                     ;motordePassoKLV.c: 17: void motordePasso_klv_init (int pulsosPorRevolucao );motordePass
+  1711  0011                     	
+  1712                           _motordePasso_klv_init:	
+  1713  054D                     ;incstack = 0
+  1714                           	opt	stack 7
+  1715                           ; Regs used in _motordePasso_klv_init: [wreg]
+  1716                           	line	19
+  1717                           	
+  1718                           l1002:	
+  1719  054D                     ;motordePassoKLV.c: 17: void motordePasso_klv_init (int pulsosPorRevolucao );motordePass
                                  oKLV.c: 18: {;motordePassoKLV.c: 19:     TRISDbits.TRISD0 = 0;
-  1572                           	bsf	status, 5	;RP0=1, select bank1
-  1573  065F  1683               	bcf	status, 6	;RP1=0, select bank1
-  1574  0660  1303               	bcf	(136)^080h,0	;volatile
-  1575  0661  1008               	line	20
-  1576                           ;motordePassoKLV.c: 20:     TRISDbits.TRISD1 = 0;
-  1577                           	bcf	(136)^080h,1	;volatile
-  1578  0662  1088               	line	21
-  1579                           ;motordePassoKLV.c: 21:     TRISDbits.TRISD2 = 0;
-  1580                           	bcf	(136)^080h,2	;volatile
-  1581  0663  1108               	line	22
-  1582                           ;motordePassoKLV.c: 22:     TRISDbits.TRISD3 = 0;
-  1583                           	bcf	(136)^080h,3	;volatile
-  1584  0664  1188               	line	24
-  1585                           ;motordePassoKLV.c: 24:     PORTDbits.RD0 = 0;
-  1586                           	bcf	status, 5	;RP0=0, select bank0
-  1587  0665  1283               	bcf	status, 6	;RP1=0, select bank0
-  1588  0666  1303               	bcf	(8),0	;volatile
-  1589  0667  1008               	line	25
-  1590                           ;motordePassoKLV.c: 25:     PORTDbits.RD1 = 0;
-  1591                           	bcf	(8),1	;volatile
-  1592  0668  1088               	line	26
-  1593                           ;motordePassoKLV.c: 26:     PORTDbits.RD2 = 0;
-  1594                           	bcf	(8),2	;volatile
-  1595  0669  1108               	line	27
-  1596                           ;motordePassoKLV.c: 27:     PORTDbits.RD3 = 0;
-  1597                           	bcf	(8),3	;volatile
-  1598  066A  1188               	line	29
-  1599                           	
-  1600                           l996:	
-  1601  066B                     ;motordePassoKLV.c: 29:     ppr = pulsosPorRevolucao;
-  1602                           	movf	(motordePasso_klv_init@pulsosPorRevolucao+1),w
-  1603  066B  0871               	movwf	(_ppr+1)
-  1604  066C  00B5               	movf	(motordePasso_klv_init@pulsosPorRevolucao),w
-  1605  066D  0870               	movwf	(_ppr)
-  1606  066E  00B4               	line	30
-  1607                           	
-  1608                           l111:	
-  1609  066F                     	return
-  1610  066F  0008               	opt stack 0
-  1611                           GLOBAL	__end_of_motordePasso_klv_init
-  1612                           	__end_of_motordePasso_klv_init:
-  1613  0670                     	signat	_motordePasso_klv_init,4217
-  1614                           	global	_motordePassoKLV
-  1615                           
-  1616 ;; *************** function _motordePassoKLV *****************
-  1617 ;; Defined at:
-  1618 ;;		line 32 in file "motordePassoKLV.c"
-  1619 ;; Parameters:    Size  Location     Type
-  1620 ;;  sentido         1    wreg     unsigned char 
-  1621 ;;  graus           2    4[BANK0 ] int 
-  1622 ;;  t               2    6[BANK0 ] int 
-  1623 ;; Auto vars:     Size  Location     Type
-  1624 ;;  sentido         1   10[BANK0 ] unsigned char 
-  1625 ;;  i               2   11[BANK0 ] int 
-  1626 ;;  numPassos       2    8[BANK0 ] int 
-  1627 ;; Return value:  Size  Location     Type
-  1628 ;;                  1    wreg      void 
-  1629 ;; Registers used:
-  1630 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
-  1631 ;; Tracked objects:
-  1632 ;;		On entry : 0/0
-  1633 ;;		On exit  : 0/0
-  1634 ;;		Unchanged: 0/0
-  1635 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1636 ;;      Params:         0       4       0       0       0
-  1637 ;;      Locals:         0       5       0       0       0
-  1638 ;;      Temps:          1       0       0       0       0
-  1639 ;;      Totals:         1       9       0       0       0
-  1640 ;;Total ram usage:       10 bytes
-  1641 ;; Hardware stack levels used:    1
-  1642 ;; Hardware stack levels required when called:    1
-  1643 ;; This function calls:
-  1644 ;;		___awdiv
-  1645 ;;		___wmul
-  1646 ;;		_delay
-  1647 ;; This function is called by:
-  1648 ;;		_main
-  1649 ;; This function uses a non-reentrant model
-  1650 ;;
-  1651                           psect	text2,local,class=CODE,delta=2,merge=1,group=0
-  1652                           	line	32
-  1653                           global __ptext2
-  1654                           __ptext2:	;psect for function _motordePassoKLV
-  1655  0722                     psect	text2
-  1656                           	file	"motordePassoKLV.c"
-  1657                           	line	32
-  1658                           	global	__size_of_motordePassoKLV
-  1659                           	__size_of_motordePassoKLV	equ	__end_of_motordePassoKLV-_motordePassoKLV
-  1660  0058                     	
-  1661                           _motordePassoKLV:	
-  1662  0722                     ;incstack = 0
-  1663                           	opt	stack 6
-  1664                           ; Regs used in _motordePassoKLV: [wreg-fsr0h+status,2+status,0+pclath+cstack]
-  1665                           ;motordePassoKLV@sentido stored from wreg
-  1666                           	bcf	status, 5	;RP0=0, select bank0
-  1667  0722  1283               	bcf	status, 6	;RP1=0, select bank0
-  1668  0723  1303               	movwf	(motordePassoKLV@sentido)
-  1669  0724  00C0               	line	36
-  1670                           	
-  1671                           l998:	
-  1672  0725                     ;motordePassoKLV.c: 32: void motordePassoKLV (char sentido, int graus, int t );motordePa
-                                 ssoKLV.c: 33: {;motordePassoKLV.c: 34:    int i;;motordePassoKLV.c: 35:    int numPassos
-                                 ;;motordePassoKLV.c: 36:    numPassos = (graus * ppr)/360;
-  1673                           	movlw	068h
-  1674  0725  3068               	movwf	(___awdiv@divisor)
-  1675  0726  00F6               	movlw	01h
-  1676  0727  3001               	movwf	((___awdiv@divisor))+1
-  1677  0728  00F7               	movf	(motordePassoKLV@graus+1),w
-  1678  0729  083B               	movwf	(___wmul@multiplier+1)
-  1679  072A  00F1               	movf	(motordePassoKLV@graus),w
-  1680  072B  083A               	movwf	(___wmul@multiplier)
-  1681  072C  00F0               	movf	(_ppr+1),w
-  1682  072D  0835               	movwf	(___wmul@multiplicand+1)
-  1683  072E  00F3               	movf	(_ppr),w
-  1684  072F  0834               	movwf	(___wmul@multiplicand)
-  1685  0730  00F2               	fcall	___wmul
-  1686  0731  120A  118A  26B0  120A  118A  	movf	(1+(?___wmul)),w
-  1687  0736  0871               	movwf	(___awdiv@dividend+1)
-  1688  0737  00F9               	movf	(0+(?___wmul)),w
-  1689  0738  0870               	movwf	(___awdiv@dividend)
-  1690  0739  00F8               	fcall	___awdiv
-  1691  073A  120A  118A  277A  120A  118A  	movf	(1+(?___awdiv)),w
-  1692  073F  0877               	bcf	status, 5	;RP0=0, select bank0
-  1693  0740  1283               	bcf	status, 6	;RP1=0, select bank0
-  1694  0741  1303               	movwf	(motordePassoKLV@numPassos+1)
-  1695  0742  00BF               	movf	(0+(?___awdiv)),w
-  1696  0743  0876               	movwf	(motordePassoKLV@numPassos)
-  1697  0744  00BE               	line	38
-  1698                           	
-  1699                           l1000:	
-  1700  0745                     ;motordePassoKLV.c: 38:    for( i=0; i<numPassos; i++ )
-  1701                           	clrf	(motordePassoKLV@i)
-  1702  0745  01C1               	clrf	(motordePassoKLV@i+1)
-  1703  0746  01C2               	goto	l1010
-  1704  0747  2F6A               	
-  1705                           l115:	
-  1706  0748                     	line	40
-  1707                           	
-  1708                           l1002:	
-  1709  0748                     ;motordePassoKLV.c: 39:    {;motordePassoKLV.c: 40:        PORTD = ((PORTD & 0xF0) | pas
+  1720                           	bsf	status, 5	;RP0=1, select bank1
+  1721  054D  1683               	bcf	status, 6	;RP1=0, select bank1
+  1722  054E  1303               	bcf	(136)^080h,0	;volatile
+  1723  054F  1008               	line	20
+  1724                           ;motordePassoKLV.c: 20:     TRISDbits.TRISD1 = 0;
+  1725                           	bcf	(136)^080h,1	;volatile
+  1726  0550  1088               	line	21
+  1727                           ;motordePassoKLV.c: 21:     TRISDbits.TRISD2 = 0;
+  1728                           	bcf	(136)^080h,2	;volatile
+  1729  0551  1108               	line	22
+  1730                           ;motordePassoKLV.c: 22:     TRISDbits.TRISD3 = 0;
+  1731                           	bcf	(136)^080h,3	;volatile
+  1732  0552  1188               	line	24
+  1733                           ;motordePassoKLV.c: 24:     PORTDbits.RD0 = 0;
+  1734                           	bcf	status, 5	;RP0=0, select bank0
+  1735  0553  1283               	bcf	status, 6	;RP1=0, select bank0
+  1736  0554  1303               	bcf	(8),0	;volatile
+  1737  0555  1008               	line	25
+  1738                           ;motordePassoKLV.c: 25:     PORTDbits.RD1 = 0;
+  1739                           	bcf	(8),1	;volatile
+  1740  0556  1088               	line	26
+  1741                           ;motordePassoKLV.c: 26:     PORTDbits.RD2 = 0;
+  1742                           	bcf	(8),2	;volatile
+  1743  0557  1108               	line	27
+  1744                           ;motordePassoKLV.c: 27:     PORTDbits.RD3 = 0;
+  1745                           	bcf	(8),3	;volatile
+  1746  0558  1188               	line	29
+  1747                           	
+  1748                           l1004:	
+  1749  0559                     ;motordePassoKLV.c: 29:     ppr = pulsosPorRevolucao;
+  1750                           	movf	(motordePasso_klv_init@pulsosPorRevolucao+1),w
+  1751  0559  0871               	movwf	(_ppr+1)
+  1752  055A  00D4               	movf	(motordePasso_klv_init@pulsosPorRevolucao),w
+  1753  055B  0870               	movwf	(_ppr)
+  1754  055C  00D3               	line	30
+  1755                           	
+  1756                           l111:	
+  1757  055D                     	return
+  1758  055D  0008               	opt stack 0
+  1759                           GLOBAL	__end_of_motordePasso_klv_init
+  1760                           	__end_of_motordePasso_klv_init:
+  1761  055E                     	signat	_motordePasso_klv_init,4217
+  1762                           	global	_motordePassoKLV
+  1763                           
+  1764 ;; *************** function _motordePassoKLV *****************
+  1765 ;; Defined at:
+  1766 ;;		line 32 in file "motordePassoKLV.c"
+  1767 ;; Parameters:    Size  Location     Type
+  1768 ;;  sentido         1    wreg     unsigned char 
+  1769 ;;  graus           4   14[BANK0 ] long 
+  1770 ;;  t               2   18[BANK0 ] int 
+  1771 ;; Auto vars:     Size  Location     Type
+  1772 ;;  sentido         1   28[BANK0 ] unsigned char 
+  1773 ;;  numPassos       4   24[BANK0 ] long 
+  1774 ;;  i               2   29[BANK0 ] int 
+  1775 ;; Return value:  Size  Location     Type
+  1776 ;;                  1    wreg      void 
+  1777 ;; Registers used:
+  1778 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+  1779 ;; Tracked objects:
+  1780 ;;		On entry : 0/0
+  1781 ;;		On exit  : 0/0
+  1782 ;;		Unchanged: 0/0
+  1783 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1784 ;;      Params:         0       6       0       0       0
+  1785 ;;      Locals:         0       7       0       0       0
+  1786 ;;      Temps:          0       4       0       0       0
+  1787 ;;      Totals:         0      17       0       0       0
+  1788 ;;Total ram usage:       17 bytes
+  1789 ;; Hardware stack levels used:    1
+  1790 ;; Hardware stack levels required when called:    1
+  1791 ;; This function calls:
+  1792 ;;		___aldiv
+  1793 ;;		___lmul
+  1794 ;;		_delay
+  1795 ;; This function is called by:
+  1796 ;;		_main
+  1797 ;; This function uses a non-reentrant model
+  1798 ;;
+  1799                           psect	text2,local,class=CODE,delta=2,merge=1,group=0
+  1800                           	line	32
+  1801                           global __ptext2
+  1802                           __ptext2:	;psect for function _motordePassoKLV
+  1803  05E6                     psect	text2
+  1804                           	file	"motordePassoKLV.c"
+  1805                           	line	32
+  1806                           	global	__size_of_motordePassoKLV
+  1807                           	__size_of_motordePassoKLV	equ	__end_of_motordePassoKLV-_motordePassoKLV
+  1808  007E                     	
+  1809                           _motordePassoKLV:	
+  1810  05E6                     ;incstack = 0
+  1811                           	opt	stack 6
+  1812                           ; Regs used in _motordePassoKLV: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
+  1813                           ;motordePassoKLV@sentido stored from wreg
+  1814                           	bcf	status, 5	;RP0=0, select bank0
+  1815  05E6  1283               	bcf	status, 6	;RP1=0, select bank0
+  1816  05E7  1303               	movwf	(motordePassoKLV@sentido)
+  1817  05E8  00BC               	line	36
+  1818                           	
+  1819                           l1006:	
+  1820  05E9                     ;motordePassoKLV.c: 32: void motordePassoKLV ( char sentido, long graus, int t );motorde
+                                 PassoKLV.c: 33: {;motordePassoKLV.c: 34:    int i;;motordePassoKLV.c: 35:    long numPas
+                                 sos;;motordePassoKLV.c: 36:    numPassos = (graus * ppr)/360;
+  1821                           	movlw	0
+  1822  05E9  3000               	movwf	(___aldiv@divisor+3)
+  1823  05EA  00A3               	movlw	0
+  1824  05EB  3000               	movwf	(___aldiv@divisor+2)
+  1825  05EC  00A2               	movlw	01h
+  1826  05ED  3001               	movwf	(___aldiv@divisor+1)
+  1827  05EE  00A1               	movlw	068h
+  1828  05EF  3068               	movwf	(___aldiv@divisor)
+  1829  05F0  00A0               
+  1830                           	movf	(_ppr),w
+  1831  05F1  0853               	movwf	(___lmul@multiplier)
+  1832  05F2  00F0               	movf	(_ppr+1),w
+  1833  05F3  0854               	movwf	(___lmul@multiplier+1)
+  1834  05F4  00F1               	movlw	0
+  1835  05F5  3000               	btfsc	(___lmul@multiplier+1),7
+  1836  05F6  1BF1               	movlw	255
+  1837  05F7  30FF               	movwf	(___lmul@multiplier+2)
+  1838  05F8  00F2               	movwf	(___lmul@multiplier+3)
+  1839  05F9  00F3               	movf	(motordePassoKLV@graus+3),w
+  1840  05FA  0831               	movwf	(___lmul@multiplicand+3)
+  1841  05FB  00F7               	movf	(motordePassoKLV@graus+2),w
+  1842  05FC  0830               	movwf	(___lmul@multiplicand+2)
+  1843  05FD  00F6               	movf	(motordePassoKLV@graus+1),w
+  1844  05FE  082F               	movwf	(___lmul@multiplicand+1)
+  1845  05FF  00F5               	movf	(motordePassoKLV@graus),w
+  1846  0600  082E               	movwf	(___lmul@multiplicand)
+  1847  0601  00F4               
+  1848                           	fcall	___lmul
+  1849  0602  120A  118A  259C  120A  118A  	movf	(3+(?___lmul)),w
+  1850  0607  0873               	bcf	status, 5	;RP0=0, select bank0
+  1851  0608  1283               	bcf	status, 6	;RP1=0, select bank0
+  1852  0609  1303               	movwf	(___aldiv@dividend+3)
+  1853  060A  00A7               	movf	(2+(?___lmul)),w
+  1854  060B  0872               	movwf	(___aldiv@dividend+2)
+  1855  060C  00A6               	movf	(1+(?___lmul)),w
+  1856  060D  0871               	movwf	(___aldiv@dividend+1)
+  1857  060E  00A5               	movf	(0+(?___lmul)),w
+  1858  060F  0870               	movwf	(___aldiv@dividend)
+  1859  0610  00A4               
+  1860                           	fcall	___aldiv
+  1861  0611  120A  118A  2664  120A  118A  	bcf	status, 5	;RP0=0, select bank0
+  1862  0616  1283               	bcf	status, 6	;RP1=0, select bank0
+  1863  0617  1303               	movf	(3+(?___aldiv)),w
+  1864  0618  0823               	movwf	(motordePassoKLV@numPassos+3)
+  1865  0619  00BB               	movf	(2+(?___aldiv)),w
+  1866  061A  0822               	movwf	(motordePassoKLV@numPassos+2)
+  1867  061B  00BA               	movf	(1+(?___aldiv)),w
+  1868  061C  0821               	movwf	(motordePassoKLV@numPassos+1)
+  1869  061D  00B9               	movf	(0+(?___aldiv)),w
+  1870  061E  0820               	movwf	(motordePassoKLV@numPassos)
+  1871  061F  00B8               
+  1872                           	line	38
+  1873                           	
+  1874                           l1008:	
+  1875  0620                     ;motordePassoKLV.c: 38:    for( i=0; i<numPassos; i++ )
+  1876                           	clrf	(motordePassoKLV@i)
+  1877  0620  01BD               	clrf	(motordePassoKLV@i+1)
+  1878  0621  01BE               	goto	l1018
+  1879  0622  2E43               	
+  1880                           l115:	
+  1881  0623                     	line	40
+  1882                           	
+  1883                           l1010:	
+  1884  0623                     ;motordePassoKLV.c: 39:    {;motordePassoKLV.c: 40:        PORTD = ((PORTD & 0xF0) | pas
                                  sos[indice]);
-  1710                           	bcf	status, 5	;RP0=0, select bank0
-  1711  0748  1283               	bcf	status, 6	;RP1=0, select bank0
-  1712  0749  1303               	movf	(_indice),w
-  1713  074A  0843               	addlw	low(_passos|((0x0)<<8))&0ffh
-  1714  074B  3E30               	movwf	fsr0
-  1715  074C  0084               	movf	(8),w	;volatile
-  1716  074D  0808               	andlw	0F0h
-  1717  074E  39F0               	bcf	status, 7	;select IRP bank0
-  1718  074F  1383               	iorwf	indf,w
-  1719  0750  0400               	movwf	(8)	;volatile
-  1720  0751  0088               	line	41
-  1721                           	
-  1722                           l1004:	
-  1723  0752                     ;motordePassoKLV.c: 41:        indice = (indice+sentido) % 4;
-  1724                           	movf	(motordePassoKLV@sentido),w
-  1725  0752  0840               	addwf	(_indice),w
-  1726  0753  0743               	andlw	03h
-  1727  0754  3903               	movwf	(??_motordePassoKLV+0)+0
-  1728  0755  00FB               	movf	(??_motordePassoKLV+0)+0,w
-  1729  0756  087B               	movwf	(_indice)
-  1730  0757  00C3               	line	42
-  1731                           	
-  1732                           l1006:	
-  1733  0758                     ;motordePassoKLV.c: 42:        delay(250);
-  1734                           	movlw	0FAh
-  1735  0758  30FA               	movwf	(delay@t)
-  1736  0759  00F0               	movlw	0
-  1737  075A  3000               	movwf	((delay@t))+1
-  1738  075B  00F1               	fcall	_delay
-  1739  075C  120A  118A  2699  120A  118A  	line	43
-  1740                           	
-  1741                           l1008:	
-  1742  0761                     ;motordePassoKLV.c: 43:    }
-  1743                           	movlw	01h
-  1744  0761  3001               	bcf	status, 5	;RP0=0, select bank0
-  1745  0762  1283               	bcf	status, 6	;RP1=0, select bank0
-  1746  0763  1303               	addwf	(motordePassoKLV@i),f
-  1747  0764  07C1               	skipnc
-  1748  0765  1803               	incf	(motordePassoKLV@i+1),f
-  1749  0766  0AC2               	movlw	0
-  1750  0767  3000               	addwf	(motordePassoKLV@i+1),f
-  1751  0768  07C2               	goto	l1010
-  1752  0769  2F6A               	
-  1753                           l114:	
-  1754  076A                     	
-  1755                           l1010:	
-  1756  076A                     	movf	(motordePassoKLV@i+1),w
-  1757  076A  0842               	xorlw	80h
-  1758  076B  3A80               	movwf	(??_motordePassoKLV+0)+0
-  1759  076C  00FB               	movf	(motordePassoKLV@numPassos+1),w
-  1760  076D  083F               	xorlw	80h
-  1761  076E  3A80               	subwf	(??_motordePassoKLV+0)+0,w
-  1762  076F  027B               	skipz
-  1763  0770  1D03               	goto	u595
-  1764  0771  2F74               	movf	(motordePassoKLV@numPassos),w
-  1765  0772  083E               	subwf	(motordePassoKLV@i),w
-  1766  0773  0241               u595:
-  1767  0774                     
-  1768                           	skipc
-  1769  0774  1C03               	goto	u591
-  1770  0775  2F77               	goto	u590
-  1771  0776  2F78               u591:
-  1772  0777                     	goto	l1002
-  1773  0777  2F48               u590:
-  1774  0778                     	goto	l117
-  1775  0778  2F79               	
-  1776                           l116:	
-  1777  0779                     	line	44
-  1778                           	
-  1779                           l117:	
-  1780  0779                     	return
-  1781  0779  0008               	opt stack 0
-  1782                           GLOBAL	__end_of_motordePassoKLV
-  1783                           	__end_of_motordePassoKLV:
-  1784  077A                     	signat	_motordePassoKLV,12409
-  1785                           	global	_delay
-  1786                           
-  1787 ;; *************** function _delay *****************
-  1788 ;; Defined at:
-  1789 ;;		line 7 in file "delay.c"
-  1790 ;; Parameters:    Size  Location     Type
-  1791 ;;  t               2    0[COMMON] unsigned int 
-  1792 ;; Auto vars:     Size  Location     Type
-  1793 ;;		None
-  1794 ;; Return value:  Size  Location     Type
-  1795 ;;                  1    wreg      void 
-  1796 ;; Registers used:
-  1797 ;;		wreg, status,2, status,0
-  1798 ;; Tracked objects:
-  1799 ;;		On entry : 0/0
-  1800 ;;		On exit  : 0/0
-  1801 ;;		Unchanged: 0/0
-  1802 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1803 ;;      Params:         2       0       0       0       0
-  1804 ;;      Locals:         0       0       0       0       0
-  1805 ;;      Temps:          1       0       0       0       0
-  1806 ;;      Totals:         3       0       0       0       0
-  1807 ;;Total ram usage:        3 bytes
-  1808 ;; Hardware stack levels used:    1
-  1809 ;; This function calls:
-  1810 ;;		Nothing
-  1811 ;; This function is called by:
-  1812 ;;		_main
-  1813 ;;		_motordePassoKLV
-  1814 ;; This function uses a non-reentrant model
-  1815 ;;
-  1816                           psect	text3,local,class=CODE,delta=2,merge=1,group=0
-  1817                           	file	"delay.c"
-  1818                           	line	7
-  1819                           global __ptext3
-  1820                           __ptext3:	;psect for function _delay
-  1821  0699                     psect	text3
-  1822                           	file	"delay.c"
-  1823                           	line	7
-  1824                           	global	__size_of_delay
-  1825                           	__size_of_delay	equ	__end_of_delay-_delay
-  1826  0017                     	
-  1827                           _delay:	
-  1828  0699                     ;incstack = 0
-  1829                           	opt	stack 6
-  1830                           ; Regs used in _delay: [wreg+status,2+status,0]
-  1831                           	line	9
-  1832                           	
-  1833                           l930:	
-  1834  0699                     ;delay.c: 7: void delay ( unsigned int t);delay.c: 8: {;delay.c: 9:     while ( t )
-  1835                           	goto	l934
-  1836  0699  2EA8               	
-  1837                           l6:	
-  1838  069A                     	line	11
-  1839                           	
-  1840                           l932:	
-  1841  069A                     ;delay.c: 10:     {;delay.c: 11:         _delay((unsigned long)((1)*(4000000/4000.0)));
+  1885                           	movf	(_indice),w
+  1886  0623  0855               	addlw	low(_passos|((0x0)<<8))&0ffh
+  1887  0624  3E4F               	movwf	fsr0
+  1888  0625  0084               	movf	(8),w	;volatile
+  1889  0626  0808               	andlw	0F0h
+  1890  0627  39F0               	bcf	status, 7	;select IRP bank0
+  1891  0628  1383               	iorwf	indf,w
+  1892  0629  0400               	movwf	(8)	;volatile
+  1893  062A  0088               	line	41
+  1894                           	
+  1895                           l1012:	
+  1896  062B                     ;motordePassoKLV.c: 41:        indice = (indice+sentido) % 4;
+  1897                           	movf	(motordePassoKLV@sentido),w
+  1898  062B  083C               	addwf	(_indice),w
+  1899  062C  0755               	andlw	03h
+  1900  062D  3903               	movwf	(??_motordePassoKLV+0)+0
+  1901  062E  00B4               	movf	(??_motordePassoKLV+0)+0,w
+  1902  062F  0834               	movwf	(_indice)
+  1903  0630  00D5               	line	42
+  1904                           	
+  1905                           l1014:	
+  1906  0631                     ;motordePassoKLV.c: 42:        delay(t);
+  1907                           	movf	(motordePassoKLV@t+1),w
+  1908  0631  0833               	movwf	(delay@t+1)
+  1909  0632  00F1               	movf	(motordePassoKLV@t),w
+  1910  0633  0832               	movwf	(delay@t)
+  1911  0634  00F0               	fcall	_delay
+  1912  0635  120A  118A  2585  120A  118A  	line	43
+  1913                           	
+  1914                           l1016:	
+  1915  063A                     ;motordePassoKLV.c: 43:    }
+  1916                           	movlw	01h
+  1917  063A  3001               	bcf	status, 5	;RP0=0, select bank0
+  1918  063B  1283               	bcf	status, 6	;RP1=0, select bank0
+  1919  063C  1303               	addwf	(motordePassoKLV@i),f
+  1920  063D  07BD               	skipnc
+  1921  063E  1803               	incf	(motordePassoKLV@i+1),f
+  1922  063F  0ABE               	movlw	0
+  1923  0640  3000               	addwf	(motordePassoKLV@i+1),f
+  1924  0641  07BE               	goto	l1018
+  1925  0642  2E43               	
+  1926                           l114:	
+  1927  0643                     	
+  1928                           l1018:	
+  1929  0643                     	movf	(motordePassoKLV@i),w
+  1930  0643  083D               	movwf	((??_motordePassoKLV+0)+0)
+  1931  0644  00B4               	movf	(motordePassoKLV@i+1),w
+  1932  0645  083E               	movwf	((??_motordePassoKLV+0)+0+1)
+  1933  0646  00B5               	movlw	0
+  1934  0647  3000               	btfsc	((??_motordePassoKLV+0)+0+1),7
+  1935  0648  1BB5               	movlw	255
+  1936  0649  30FF               	movwf	((??_motordePassoKLV+0)+0+2)
+  1937  064A  00B6               	movwf	((??_motordePassoKLV+0)+0+3)
+  1938  064B  00B7               	movf	3+(??_motordePassoKLV+0)+0,w
+  1939  064C  0837               	xorlw	80h
+  1940  064D  3A80               	movwf	btemp+1
+  1941  064E  00FF               	movf	(motordePassoKLV@numPassos+3),w
+  1942  064F  083B               	xorlw	80h
+  1943  0650  3A80               	subwf	btemp+1,w
+  1944  0651  027F               	
+  1945                           	skipz
+  1946  0652  1D03               	goto	u613
+  1947  0653  2E5E               	movf	(motordePassoKLV@numPassos+2),w
+  1948  0654  083A               	subwf	2+(??_motordePassoKLV+0)+0,w
+  1949  0655  0236               	skipz
+  1950  0656  1D03               	goto	u613
+  1951  0657  2E5E               	movf	(motordePassoKLV@numPassos+1),w
+  1952  0658  0839               	subwf	1+(??_motordePassoKLV+0)+0,w
+  1953  0659  0235               	skipz
+  1954  065A  1D03               	goto	u613
+  1955  065B  2E5E               	movf	(motordePassoKLV@numPassos),w
+  1956  065C  0838               	subwf	0+(??_motordePassoKLV+0)+0,w
+  1957  065D  0234               u613:
+  1958  065E                     	skipc
+  1959  065E  1C03               	goto	u611
+  1960  065F  2E61               	goto	u610
+  1961  0660  2E62               u611:
+  1962  0661                     	goto	l1010
+  1963  0661  2E23               u610:
+  1964  0662                     	goto	l117
+  1965  0662  2E63               	
+  1966                           l116:	
+  1967  0663                     	line	44
+  1968                           	
+  1969                           l117:	
+  1970  0663                     	return
+  1971  0663  0008               	opt stack 0
+  1972                           GLOBAL	__end_of_motordePassoKLV
+  1973                           	__end_of_motordePassoKLV:
+  1974  0664                     	signat	_motordePassoKLV,12409
+  1975                           	global	_delay
+  1976                           
+  1977 ;; *************** function _delay *****************
+  1978 ;; Defined at:
+  1979 ;;		line 7 in file "delay.c"
+  1980 ;; Parameters:    Size  Location     Type
+  1981 ;;  t               2    0[COMMON] unsigned int 
+  1982 ;; Auto vars:     Size  Location     Type
+  1983 ;;		None
+  1984 ;; Return value:  Size  Location     Type
+  1985 ;;                  1    wreg      void 
+  1986 ;; Registers used:
+  1987 ;;		wreg, status,2, status,0
+  1988 ;; Tracked objects:
+  1989 ;;		On entry : 0/0
+  1990 ;;		On exit  : 0/0
+  1991 ;;		Unchanged: 0/0
+  1992 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1993 ;;      Params:         2       0       0       0       0
+  1994 ;;      Locals:         0       0       0       0       0
+  1995 ;;      Temps:          1       0       0       0       0
+  1996 ;;      Totals:         3       0       0       0       0
+  1997 ;;Total ram usage:        3 bytes
+  1998 ;; Hardware stack levels used:    1
+  1999 ;; This function calls:
+  2000 ;;		Nothing
+  2001 ;; This function is called by:
+  2002 ;;		_main
+  2003 ;;		_motordePassoKLV
+  2004 ;; This function uses a non-reentrant model
+  2005 ;;
+  2006                           psect	text3,local,class=CODE,delta=2,merge=1,group=0
+  2007                           	file	"delay.c"
+  2008                           	line	7
+  2009                           global __ptext3
+  2010                           __ptext3:	;psect for function _delay
+  2011  0585                     psect	text3
+  2012                           	file	"delay.c"
+  2013                           	line	7
+  2014                           	global	__size_of_delay
+  2015                           	__size_of_delay	equ	__end_of_delay-_delay
+  2016  0017                     	
+  2017                           _delay:	
+  2018  0585                     ;incstack = 0
+  2019                           	opt	stack 6
+  2020                           ; Regs used in _delay: [wreg+status,2+status,0]
+  2021                           	line	9
+  2022                           	
+  2023                           l942:	
+  2024  0585                     ;delay.c: 7: void delay ( unsigned int t);delay.c: 8: {;delay.c: 9:     while ( t )
+  2025                           	goto	l946
+  2026  0585  2D94               	
+  2027                           l6:	
+  2028  0586                     	line	11
+  2029                           	
+  2030                           l944:	
+  2031  0586                     ;delay.c: 10:     {;delay.c: 11:         _delay((unsigned long)((1)*(4000000/4000.0)));
 
-  1842                           	opt asmopt_push
-  1843                           opt asmopt_off
-  1844                           	movlw	199
-  1845  069A  30C7               movwf	((??_delay+0)+0),f
-  1846  069B  00F2               	u697:
-  1847  069C                     	nop2
-  1848  069C  2E9D               decfsz	(??_delay+0)+0,f
-  1849  069D  0BF2               	goto	u697
-  1850  069E  2E9C               	nop2
-  1851  069F  2EA0               	nop2
-  1852  06A0  2EA1               opt asmopt_pop
-  1853                           
-  1854                           	line	12
-  1855                           ;delay.c: 12:         --t;
-  1856                           	movlw	01h
-  1857  06A1  3001               	subwf	(delay@t),f
-  1858  06A2  02F0               	movlw	0
-  1859  06A3  3000               	skipc
-  1860  06A4  1C03               	decf	(delay@t+1),f
-  1861  06A5  03F1               	subwf	(delay@t+1),f
-  1862  06A6  02F1               	goto	l934
-  1863  06A7  2EA8               	line	13
-  1864                           ;delay.c: 13:     }
-  1865                           	
-  1866                           l5:	
-  1867  06A8                     	line	9
-  1868                           	
-  1869                           l934:	
-  1870  06A8                     ;delay.c: 9:     while ( t )
-  1871                           	movf	((delay@t)),w
-  1872  06A8  0870               iorwf	((delay@t+1)),w
-  1873  06A9  0471               	btfss	status,2
-  1874  06AA  1D03               	goto	u441
-  1875  06AB  2EAD               	goto	u440
-  1876  06AC  2EAE               u441:
-  1877  06AD                     	goto	l932
-  1878  06AD  2E9A               u440:
-  1879  06AE                     	goto	l8
-  1880  06AE  2EAF               	
-  1881                           l7:	
-  1882  06AF                     	line	14
-  1883                           	
-  1884                           l8:	
-  1885  06AF                     	return
-  1886  06AF  0008               	opt stack 0
-  1887                           GLOBAL	__end_of_delay
-  1888                           	__end_of_delay:
-  1889  06B0                     	signat	_delay,4217
-  1890                           	global	___wmul
-  1891                           
-  1892 ;; *************** function ___wmul *****************
-  1893 ;; Defined at:
-  1894 ;;		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c"
-  1895 ;; Parameters:    Size  Location     Type
-  1896 ;;  multiplier      2    0[COMMON] unsigned int 
-  1897 ;;  multiplicand    2    2[COMMON] unsigned int 
-  1898 ;; Auto vars:     Size  Location     Type
-  1899 ;;  product         2    4[COMMON] unsigned int 
-  1900 ;; Return value:  Size  Location     Type
-  1901 ;;                  2    0[COMMON] unsigned int 
-  1902 ;; Registers used:
-  1903 ;;		wreg, status,2, status,0
-  1904 ;; Tracked objects:
-  1905 ;;		On entry : 0/0
-  1906 ;;		On exit  : 0/0
-  1907 ;;		Unchanged: 0/0
-  1908 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1909 ;;      Params:         4       0       0       0       0
-  1910 ;;      Locals:         2       0       0       0       0
-  1911 ;;      Temps:          0       0       0       0       0
-  1912 ;;      Totals:         6       0       0       0       0
-  1913 ;;Total ram usage:        6 bytes
-  1914 ;; Hardware stack levels used:    1
-  1915 ;; This function calls:
-  1916 ;;		Nothing
-  1917 ;; This function is called by:
-  1918 ;;		_motordePassoKLV
-  1919 ;; This function uses a non-reentrant model
-  1920 ;;
-  1921                           psect	text4,local,class=CODE,delta=2,merge=1,group=1
-  1922                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c"
-  1923                           	line	15
-  1924                           global __ptext4
-  1925                           __ptext4:	;psect for function ___wmul
-  1926  06B0                     psect	text4
-  1927                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c"
-  1928                           	line	15
-  1929                           	global	__size_of___wmul
-  1930                           	__size_of___wmul	equ	__end_of___wmul-___wmul
-  1931  0028                     	
-  1932                           ___wmul:	
-  1933  06B0                     ;incstack = 0
-  1934                           	opt	stack 6
-  1935                           ; Regs used in ___wmul: [wreg+status,2+status,0]
-  1936                           	line	43
-  1937                           	
-  1938                           l936:	
-  1939  06B0                     	clrf	(___wmul@product)
-  1940  06B0  01F4               	clrf	(___wmul@product+1)
-  1941  06B1  01F5               	goto	l938
-  1942  06B2  2EB3               	line	44
-  1943                           	
-  1944                           l202:	
-  1945  06B3                     	line	45
-  1946                           	
-  1947                           l938:	
-  1948  06B3                     	btfss	(___wmul@multiplier),(0)&7
-  1949  06B3  1C70               	goto	u451
-  1950  06B4  2EB6               	goto	u450
-  1951  06B5  2EB7               u451:
-  1952  06B6                     	goto	l203
-  1953  06B6  2EBD               u450:
-  1954  06B7                     	line	46
-  1955                           	
-  1956                           l940:	
-  1957  06B7                     	movf	(___wmul@multiplicand),w
-  1958  06B7  0872               	addwf	(___wmul@product),f
-  1959  06B8  07F4               	skipnc
-  1960  06B9  1803               	incf	(___wmul@product+1),f
-  1961  06BA  0AF5               	movf	(___wmul@multiplicand+1),w
-  1962  06BB  0873               	addwf	(___wmul@product+1),f
-  1963  06BC  07F5               	
-  1964                           l203:	
-  1965  06BD                     	line	47
-  1966                           	movlw	01h
-  1967  06BD  3001               	
-  1968                           u465:
-  1969  06BE                     	clrc
-  1970  06BE  1003               	rlf	(___wmul@multiplicand),f
-  1971  06BF  0DF2               	rlf	(___wmul@multiplicand+1),f
-  1972  06C0  0DF3               	addlw	-1
-  1973  06C1  3EFF               	skipz
-  1974  06C2  1D03               	goto	u465
-  1975  06C3  2EBE               	line	48
-  1976                           	
-  1977                           l942:	
-  1978  06C4                     	movlw	01h
-  1979  06C4  3001               	
-  1980                           u475:
-  1981  06C5                     	clrc
-  1982  06C5  1003               	rrf	(___wmul@multiplier+1),f
-  1983  06C6  0CF1               	rrf	(___wmul@multiplier),f
-  1984  06C7  0CF0               	addlw	-1
-  1985  06C8  3EFF               	skipz
-  1986  06C9  1D03               	goto	u475
-  1987  06CA  2EC5               	line	49
-  1988                           	
-  1989                           l944:	
-  1990  06CB                     	movf	((___wmul@multiplier)),w
-  1991  06CB  0870               iorwf	((___wmul@multiplier+1)),w
-  1992  06CC  0471               	btfss	status,2
-  1993  06CD  1D03               	goto	u481
-  1994  06CE  2ED0               	goto	u480
-  1995  06CF  2ED1               u481:
-  1996  06D0                     	goto	l938
-  1997  06D0  2EB3               u480:
-  1998  06D1                     	goto	l946
-  1999  06D1  2ED2               	
-  2000                           l204:	
-  2001  06D2                     	line	52
-  2002                           	
-  2003                           l946:	
-  2004  06D2                     	movf	(___wmul@product+1),w
-  2005  06D2  0875               	movwf	(?___wmul+1)
-  2006  06D3  00F1               	movf	(___wmul@product),w
-  2007  06D4  0874               	movwf	(?___wmul)
-  2008  06D5  00F0               	goto	l205
-  2009  06D6  2ED7               	
-  2010                           l948:	
-  2011  06D7                     	line	53
-  2012                           	
-  2013                           l205:	
-  2014  06D7                     	return
-  2015  06D7  0008               	opt stack 0
-  2016                           GLOBAL	__end_of___wmul
-  2017                           	__end_of___wmul:
-  2018  06D8                     	signat	___wmul,8314
-  2019                           	global	___awdiv
-  2020                           
-  2021 ;; *************** function ___awdiv *****************
-  2022 ;; Defined at:
-  2023 ;;		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c"
-  2024 ;; Parameters:    Size  Location     Type
-  2025 ;;  divisor         2    6[COMMON] int 
-  2026 ;;  dividend        2    8[COMMON] int 
-  2027 ;; Auto vars:     Size  Location     Type
-  2028 ;;  quotient        2    2[BANK0 ] int 
-  2029 ;;  sign            1    1[BANK0 ] unsigned char 
-  2030 ;;  counter         1    0[BANK0 ] unsigned char 
-  2031 ;; Return value:  Size  Location     Type
-  2032 ;;                  2    6[COMMON] int 
-  2033 ;; Registers used:
-  2034 ;;		wreg, status,2, status,0
-  2035 ;; Tracked objects:
-  2036 ;;		On entry : 0/0
-  2037 ;;		On exit  : 0/0
-  2038 ;;		Unchanged: 0/0
-  2039 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  2040 ;;      Params:         4       0       0       0       0
-  2041 ;;      Locals:         0       4       0       0       0
-  2042 ;;      Temps:          1       0       0       0       0
-  2043 ;;      Totals:         5       4       0       0       0
-  2044 ;;Total ram usage:        9 bytes
-  2045 ;; Hardware stack levels used:    1
-  2046 ;; This function calls:
-  2047 ;;		Nothing
-  2048 ;; This function is called by:
-  2049 ;;		_motordePassoKLV
-  2050 ;;		_dispLCD_num
-  2051 ;; This function uses a non-reentrant model
-  2052 ;;
-  2053                           psect	text5,local,class=CODE,delta=2,merge=1,group=1
-  2054                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c"
-  2055                           	line	5
-  2056                           global __ptext5
-  2057                           __ptext5:	;psect for function ___awdiv
-  2058  077A                     psect	text5
-  2059                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c"
-  2060                           	line	5
-  2061                           	global	__size_of___awdiv
-  2062                           	__size_of___awdiv	equ	__end_of___awdiv-___awdiv
-  2063  0073                     	
-  2064                           ___awdiv:	
-  2065  077A                     ;incstack = 0
-  2066                           	opt	stack 6
-  2067                           ; Regs used in ___awdiv: [wreg+status,2+status,0]
-  2068                           	line	13
-  2069                           	
-  2070                           l950:	
-  2071  077A                     	bcf	status, 5	;RP0=0, select bank0
-  2072  077A  1283               	bcf	status, 6	;RP1=0, select bank0
-  2073  077B  1303               	clrf	(___awdiv@sign)
-  2074  077C  01B7               	line	14
-  2075                           	
-  2076                           l952:	
-  2077  077D                     	btfss	(___awdiv@divisor+1),7
-  2078  077D  1FF7               	goto	u491
-  2079  077E  2F80               	goto	u490
-  2080  077F  2F81               u491:
-  2081  0780                     	goto	l958
-  2082  0780  2F89               u490:
-  2083  0781                     	line	15
-  2084                           	
-  2085                           l954:	
-  2086  0781                     	comf	(___awdiv@divisor),f
-  2087  0781  09F6               	comf	(___awdiv@divisor+1),f
-  2088  0782  09F7               	incf	(___awdiv@divisor),f
-  2089  0783  0AF6               	skipnz
-  2090  0784  1903               	incf	(___awdiv@divisor+1),f
-  2091  0785  0AF7               	line	16
-  2092                           	
-  2093                           l956:	
-  2094  0786                     	clrf	(___awdiv@sign)
-  2095  0786  01B7               	incf	(___awdiv@sign),f
-  2096  0787  0AB7               	goto	l958
-  2097  0788  2F89               	line	17
-  2098                           	
-  2099                           l346:	
-  2100  0789                     	line	18
-  2101                           	
-  2102                           l958:	
-  2103  0789                     	btfss	(___awdiv@dividend+1),7
-  2104  0789  1FF9               	goto	u501
-  2105  078A  2F8C               	goto	u500
-  2106  078B  2F8D               u501:
-  2107  078C                     	goto	l964
-  2108  078C  2F97               u500:
-  2109  078D                     	line	19
-  2110                           	
-  2111                           l960:	
-  2112  078D                     	comf	(___awdiv@dividend),f
-  2113  078D  09F8               	comf	(___awdiv@dividend+1),f
-  2114  078E  09F9               	incf	(___awdiv@dividend),f
-  2115  078F  0AF8               	skipnz
-  2116  0790  1903               	incf	(___awdiv@dividend+1),f
-  2117  0791  0AF9               	line	20
-  2118                           	
-  2119                           l962:	
-  2120  0792                     	movlw	low(01h)
-  2121  0792  3001               	movwf	(??___awdiv+0)+0
-  2122  0793  00FA               	movf	(??___awdiv+0)+0,w
-  2123  0794  087A               	xorwf	(___awdiv@sign),f
-  2124  0795  06B7               	goto	l964
-  2125  0796  2F97               	line	21
-  2126                           	
-  2127                           l347:	
-  2128  0797                     	line	22
-  2129                           	
-  2130                           l964:	
-  2131  0797                     	clrf	(___awdiv@quotient)
-  2132  0797  01B8               	clrf	(___awdiv@quotient+1)
-  2133  0798  01B9               	line	23
-  2134                           	
-  2135                           l966:	
-  2136  0799                     	movf	((___awdiv@divisor)),w
-  2137  0799  0876               iorwf	((___awdiv@divisor+1)),w
-  2138  079A  0477               	btfsc	status,2
-  2139  079B  1903               	goto	u511
-  2140  079C  2F9E               	goto	u510
-  2141  079D  2F9F               u511:
-  2142  079E                     	goto	l986
-  2143  079E  2FDC               u510:
-  2144  079F                     	line	24
-  2145                           	
-  2146                           l968:	
-  2147  079F                     	clrf	(___awdiv@counter)
-  2148  079F  01B6               	incf	(___awdiv@counter),f
-  2149  07A0  0AB6               	line	25
-  2150                           	goto	l974
-  2151  07A1  2FAE               	
-  2152                           l350:	
-  2153  07A2                     	line	26
-  2154                           	
-  2155                           l970:	
-  2156  07A2                     	movlw	01h
-  2157  07A2  3001               	
-  2158                           u525:
-  2159  07A3                     	clrc
-  2160  07A3  1003               	rlf	(___awdiv@divisor),f
-  2161  07A4  0DF6               	rlf	(___awdiv@divisor+1),f
-  2162  07A5  0DF7               	addlw	-1
-  2163  07A6  3EFF               	skipz
-  2164  07A7  1D03               	goto	u525
-  2165  07A8  2FA3               	line	27
-  2166                           	
-  2167                           l972:	
-  2168  07A9                     	movlw	low(01h)
-  2169  07A9  3001               	movwf	(??___awdiv+0)+0
-  2170  07AA  00FA               	movf	(??___awdiv+0)+0,w
-  2171  07AB  087A               	addwf	(___awdiv@counter),f
-  2172  07AC  07B6               	goto	l974
-  2173  07AD  2FAE               	line	28
-  2174                           	
-  2175                           l349:	
-  2176  07AE                     	line	25
-  2177                           	
-  2178                           l974:	
-  2179  07AE                     	btfss	(___awdiv@divisor+1),(15)&7
-  2180  07AE  1FF7               	goto	u531
-  2181  07AF  2FB1               	goto	u530
-  2182  07B0  2FB2               u531:
-  2183  07B1                     	goto	l970
-  2184  07B1  2FA2               u530:
-  2185  07B2                     	goto	l976
-  2186  07B2  2FB4               	
-  2187                           l351:	
-  2188  07B3                     	goto	l976
-  2189  07B3  2FB4               	line	29
-  2190                           	
-  2191                           l352:	
-  2192  07B4                     	line	30
-  2193                           	
-  2194                           l976:	
-  2195  07B4                     	movlw	01h
-  2196  07B4  3001               	
-  2197                           u545:
-  2198  07B5                     	clrc
-  2199  07B5  1003               	rlf	(___awdiv@quotient),f
-  2200  07B6  0DB8               	rlf	(___awdiv@quotient+1),f
-  2201  07B7  0DB9               	addlw	-1
-  2202  07B8  3EFF               	skipz
-  2203  07B9  1D03               	goto	u545
-  2204  07BA  2FB5               	line	31
-  2205                           	movf	(___awdiv@divisor+1),w
-  2206  07BB  0877               	subwf	(___awdiv@dividend+1),w
-  2207  07BC  0279               	skipz
-  2208  07BD  1D03               	goto	u555
-  2209  07BE  2FC1               	movf	(___awdiv@divisor),w
-  2210  07BF  0876               	subwf	(___awdiv@dividend),w
-  2211  07C0  0278               u555:
-  2212  07C1                     	skipc
-  2213  07C1  1C03               	goto	u551
-  2214  07C2  2FC4               	goto	u550
-  2215  07C3  2FC5               u551:
-  2216  07C4                     	goto	l982
-  2217  07C4  2FCD               u550:
-  2218  07C5                     	line	32
-  2219                           	
-  2220                           l978:	
-  2221  07C5                     	movf	(___awdiv@divisor),w
-  2222  07C5  0876               	subwf	(___awdiv@dividend),f
-  2223  07C6  02F8               	movf	(___awdiv@divisor+1),w
-  2224  07C7  0877               	skipc
-  2225  07C8  1C03               	decf	(___awdiv@dividend+1),f
-  2226  07C9  03F9               	subwf	(___awdiv@dividend+1),f
-  2227  07CA  02F9               	line	33
-  2228                           	
-  2229                           l980:	
-  2230  07CB                     	bsf	(___awdiv@quotient)+(0/8),(0)&7
-  2231  07CB  1438               	goto	l982
-  2232  07CC  2FCD               	line	34
-  2233                           	
-  2234                           l353:	
-  2235  07CD                     	line	35
-  2236                           	
-  2237                           l982:	
-  2238  07CD                     	movlw	01h
-  2239  07CD  3001               	
-  2240                           u565:
-  2241  07CE                     	clrc
-  2242  07CE  1003               	rrf	(___awdiv@divisor+1),f
-  2243  07CF  0CF7               	rrf	(___awdiv@divisor),f
-  2244  07D0  0CF6               	addlw	-1
-  2245  07D1  3EFF               	skipz
-  2246  07D2  1D03               	goto	u565
-  2247  07D3  2FCE               	line	36
-  2248                           	
-  2249                           l984:	
-  2250  07D4                     	movlw	01h
-  2251  07D4  3001               	subwf	(___awdiv@counter),f
-  2252  07D5  02B6               	btfss	status,2
-  2253  07D6  1D03               	goto	u571
-  2254  07D7  2FD9               	goto	u570
-  2255  07D8  2FDA               u571:
-  2256  07D9                     	goto	l976
-  2257  07D9  2FB4               u570:
-  2258  07DA                     	goto	l986
-  2259  07DA  2FDC               	
-  2260                           l354:	
-  2261  07DB                     	goto	l986
-  2262  07DB  2FDC               	line	37
-  2263                           	
-  2264                           l348:	
-  2265  07DC                     	line	38
-  2266                           	
-  2267                           l986:	
-  2268  07DC                     	movf	((___awdiv@sign)),w
-  2269  07DC  0837               	btfsc	status,2
-  2270  07DD  1903               	goto	u581
-  2271  07DE  2FE0               	goto	u580
-  2272  07DF  2FE1               u581:
-  2273  07E0                     	goto	l990
-  2274  07E0  2FE7               u580:
-  2275  07E1                     	line	39
-  2276                           	
-  2277                           l988:	
-  2278  07E1                     	comf	(___awdiv@quotient),f
-  2279  07E1  09B8               	comf	(___awdiv@quotient+1),f
-  2280  07E2  09B9               	incf	(___awdiv@quotient),f
-  2281  07E3  0AB8               	skipnz
-  2282  07E4  1903               	incf	(___awdiv@quotient+1),f
-  2283  07E5  0AB9               	goto	l990
-  2284  07E6  2FE7               	
-  2285                           l355:	
-  2286  07E7                     	line	40
-  2287                           	
-  2288                           l990:	
-  2289  07E7                     	movf	(___awdiv@quotient+1),w
-  2290  07E7  0839               	movwf	(?___awdiv+1)
-  2291  07E8  00F7               	movf	(___awdiv@quotient),w
-  2292  07E9  0838               	movwf	(?___awdiv)
-  2293  07EA  00F6               	goto	l356
-  2294  07EB  2FEC               	
-  2295                           l992:	
-  2296  07EC                     	line	41
+  2032                           	opt asmopt_push
+  2033                           opt asmopt_off
+  2034                           	movlw	199
+  2035  0586  30C7               movwf	((??_delay+0)+0),f
+  2036  0587  00F2               	u627:
+  2037  0588                     	nop2
+  2038  0588  2D89               decfsz	(??_delay+0)+0,f
+  2039  0589  0BF2               	goto	u627
+  2040  058A  2D88               	nop2
+  2041  058B  2D8C               	nop2
+  2042  058C  2D8D               opt asmopt_pop
+  2043                           
+  2044                           	line	12
+  2045                           ;delay.c: 12:         --t;
+  2046                           	movlw	01h
+  2047  058D  3001               	subwf	(delay@t),f
+  2048  058E  02F0               	movlw	0
+  2049  058F  3000               	skipc
+  2050  0590  1C03               	decf	(delay@t+1),f
+  2051  0591  03F1               	subwf	(delay@t+1),f
+  2052  0592  02F1               	goto	l946
+  2053  0593  2D94               	line	13
+  2054                           ;delay.c: 13:     }
+  2055                           	
+  2056                           l5:	
+  2057  0594                     	line	9
+  2058                           	
+  2059                           l946:	
+  2060  0594                     ;delay.c: 9:     while ( t )
+  2061                           	movf	((delay@t)),w
+  2062  0594  0870               iorwf	((delay@t+1)),w
+  2063  0595  0471               	btfss	status,2
+  2064  0596  1D03               	goto	u451
+  2065  0597  2D99               	goto	u450
+  2066  0598  2D9A               u451:
+  2067  0599                     	goto	l944
+  2068  0599  2D86               u450:
+  2069  059A                     	goto	l8
+  2070  059A  2D9B               	
+  2071                           l7:	
+  2072  059B                     	line	14
+  2073                           	
+  2074                           l8:	
+  2075  059B                     	return
+  2076  059B  0008               	opt stack 0
+  2077                           GLOBAL	__end_of_delay
+  2078                           	__end_of_delay:
+  2079  059C                     	signat	_delay,4217
+  2080                           	global	___lmul
+  2081                           
+  2082 ;; *************** function ___lmul *****************
+  2083 ;; Defined at:
+  2084 ;;		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c"
+  2085 ;; Parameters:    Size  Location     Type
+  2086 ;;  multiplier      4    0[COMMON] unsigned long 
+  2087 ;;  multiplicand    4    4[COMMON] unsigned long 
+  2088 ;; Auto vars:     Size  Location     Type
+  2089 ;;  product         4    9[COMMON] unsigned long 
+  2090 ;; Return value:  Size  Location     Type
+  2091 ;;                  4    0[COMMON] unsigned long 
+  2092 ;; Registers used:
+  2093 ;;		wreg, status,2, status,0
+  2094 ;; Tracked objects:
+  2095 ;;		On entry : 0/0
+  2096 ;;		On exit  : 0/0
+  2097 ;;		Unchanged: 0/0
+  2098 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  2099 ;;      Params:         8       0       0       0       0
+  2100 ;;      Locals:         4       0       0       0       0
+  2101 ;;      Temps:          1       0       0       0       0
+  2102 ;;      Totals:        13       0       0       0       0
+  2103 ;;Total ram usage:       13 bytes
+  2104 ;; Hardware stack levels used:    1
+  2105 ;; This function calls:
+  2106 ;;		Nothing
+  2107 ;; This function is called by:
+  2108 ;;		_motordePassoKLV
+  2109 ;; This function uses a non-reentrant model
+  2110 ;;
+  2111                           psect	text4,local,class=CODE,delta=2,merge=1,group=1
+  2112                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c"
+  2113                           	line	15
+  2114                           global __ptext4
+  2115                           __ptext4:	;psect for function ___lmul
+  2116  059C                     psect	text4
+  2117                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c"
+  2118                           	line	15
+  2119                           	global	__size_of___lmul
+  2120                           	__size_of___lmul	equ	__end_of___lmul-___lmul
+  2121  004A                     	
+  2122                           ___lmul:	
+  2123  059C                     ;incstack = 0
+  2124                           	opt	stack 6
+  2125                           ; Regs used in ___lmul: [wreg+status,2+status,0]
+  2126                           	line	119
+  2127                           	
+  2128                           l948:	
+  2129  059C                     	movlw	high highword(0)
+  2130  059C  3000               	movwf	(___lmul@product+3)
+  2131  059D  00FC               	movlw	low highword(0)
+  2132  059E  3000               	movwf	(___lmul@product+2)
+  2133  059F  00FB               	movlw	high(0)
+  2134  05A0  3000               	movwf	(___lmul@product+1)
+  2135  05A1  00FA               	movlw	low(0)
+  2136  05A2  3000               	movwf	(___lmul@product)
+  2137  05A3  00F9               
+  2138                           	goto	l950
+  2139  05A4  2DA5               	line	120
+  2140                           	
+  2141                           l214:	
+  2142  05A5                     	line	121
+  2143                           	
+  2144                           l950:	
+  2145  05A5                     	btfss	(___lmul@multiplier),(0)&7
+  2146  05A5  1C70               	goto	u461
+  2147  05A6  2DA8               	goto	u460
+  2148  05A7  2DA9               u461:
+  2149  05A8                     	goto	l954
+  2150  05A8  2DC1               u460:
+  2151  05A9                     	line	122
+  2152                           	
+  2153                           l952:	
+  2154  05A9                     	movf	(___lmul@multiplicand),w
+  2155  05A9  0874               	addwf	(___lmul@product),f
+  2156  05AA  07F9               	movf	(___lmul@multiplicand+1),w
+  2157  05AB  0875               	clrz
+  2158  05AC  1103               	skipnc
+  2159  05AD  1803               	addlw	1
+  2160  05AE  3E01               	skipnz
+  2161  05AF  1903               	goto	u471
+  2162  05B0  2DB2               	addwf	(___lmul@product+1),f
+  2163  05B1  07FA               u471:
+  2164  05B2                     	movf	(___lmul@multiplicand+2),w
+  2165  05B2  0876               	clrz
+  2166  05B3  1103               	skipnc
+  2167  05B4  1803               	addlw	1
+  2168  05B5  3E01               	skipnz
+  2169  05B6  1903               	goto	u472
+  2170  05B7  2DB9               	addwf	(___lmul@product+2),f
+  2171  05B8  07FB               u472:
+  2172  05B9                     	movf	(___lmul@multiplicand+3),w
+  2173  05B9  0877               	clrz
+  2174  05BA  1103               	skipnc
+  2175  05BB  1803               	addlw	1
+  2176  05BC  3E01               	skipnz
+  2177  05BD  1903               	goto	u473
+  2178  05BE  2DC0               	addwf	(___lmul@product+3),f
+  2179  05BF  07FC               u473:
+  2180  05C0                     
+  2181                           	goto	l954
+  2182  05C0  2DC1               	
+  2183                           l215:	
+  2184  05C1                     	line	123
+  2185                           	
+  2186                           l954:	
+  2187  05C1                     	movlw	01h
+  2188  05C1  3001               	movwf	(??___lmul+0)+0
+  2189  05C2  00F8               u485:
+  2190  05C3                     	clrc
+  2191  05C3  1003               	rlf	(___lmul@multiplicand),f
+  2192  05C4  0DF4               	rlf	(___lmul@multiplicand+1),f
+  2193  05C5  0DF5               	rlf	(___lmul@multiplicand+2),f
+  2194  05C6  0DF6               	rlf	(___lmul@multiplicand+3),f
+  2195  05C7  0DF7               	decfsz	(??___lmul+0)+0
+  2196  05C8  0BF8               	goto	u485
+  2197  05C9  2DC3               	line	124
+  2198                           	
+  2199                           l956:	
+  2200  05CA                     	movlw	01h
+  2201  05CA  3001               u495:
+  2202  05CB                     	clrc
+  2203  05CB  1003               	rrf	(___lmul@multiplier+3),f
+  2204  05CC  0CF3               	rrf	(___lmul@multiplier+2),f
+  2205  05CD  0CF2               	rrf	(___lmul@multiplier+1),f
+  2206  05CE  0CF1               	rrf	(___lmul@multiplier),f
+  2207  05CF  0CF0               	addlw	-1
+  2208  05D0  3EFF               	skipz
+  2209  05D1  1D03               	goto	u495
+  2210  05D2  2DCB               
+  2211                           	line	125
+  2212                           	movf	(___lmul@multiplier+3),w
+  2213  05D3  0873               	iorwf	(___lmul@multiplier+2),w
+  2214  05D4  0472               	iorwf	(___lmul@multiplier+1),w
+  2215  05D5  0471               	iorwf	(___lmul@multiplier),w
+  2216  05D6  0470               	skipz
+  2217  05D7  1D03               	goto	u501
+  2218  05D8  2DDA               	goto	u500
+  2219  05D9  2DDB               u501:
+  2220  05DA                     	goto	l950
+  2221  05DA  2DA5               u500:
+  2222  05DB                     	goto	l958
+  2223  05DB  2DDC               	
+  2224                           l216:	
+  2225  05DC                     	line	128
+  2226                           	
+  2227                           l958:	
+  2228  05DC                     	movf	(___lmul@product+3),w
+  2229  05DC  087C               	movwf	(?___lmul+3)
+  2230  05DD  00F3               	movf	(___lmul@product+2),w
+  2231  05DE  087B               	movwf	(?___lmul+2)
+  2232  05DF  00F2               	movf	(___lmul@product+1),w
+  2233  05E0  087A               	movwf	(?___lmul+1)
+  2234  05E1  00F1               	movf	(___lmul@product),w
+  2235  05E2  0879               	movwf	(?___lmul)
+  2236  05E3  00F0               
+  2237                           	goto	l217
+  2238  05E4  2DE5               	
+  2239                           l960:	
+  2240  05E5                     	line	129
+  2241                           	
+  2242                           l217:	
+  2243  05E5                     	return
+  2244  05E5  0008               	opt stack 0
+  2245                           GLOBAL	__end_of___lmul
+  2246                           	__end_of___lmul:
+  2247  05E6                     	signat	___lmul,8316
+  2248                           	global	___aldiv
+  2249                           
+  2250 ;; *************** function ___aldiv *****************
+  2251 ;; Defined at:
+  2252 ;;		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c"
+  2253 ;; Parameters:    Size  Location     Type
+  2254 ;;  divisor         4    0[BANK0 ] long 
+  2255 ;;  dividend        4    4[BANK0 ] long 
+  2256 ;; Auto vars:     Size  Location     Type
+  2257 ;;  quotient        4   10[BANK0 ] long 
+  2258 ;;  sign            1    9[BANK0 ] unsigned char 
+  2259 ;;  counter         1    8[BANK0 ] unsigned char 
+  2260 ;; Return value:  Size  Location     Type
+  2261 ;;                  4    0[BANK0 ] long 
+  2262 ;; Registers used:
+  2263 ;;		wreg, status,2, status,0
+  2264 ;; Tracked objects:
+  2265 ;;		On entry : 0/0
+  2266 ;;		On exit  : 0/0
+  2267 ;;		Unchanged: 0/0
+  2268 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  2269 ;;      Params:         0       8       0       0       0
+  2270 ;;      Locals:         0       6       0       0       0
+  2271 ;;      Temps:          1       0       0       0       0
+  2272 ;;      Totals:         1      14       0       0       0
+  2273 ;;Total ram usage:       15 bytes
+  2274 ;; Hardware stack levels used:    1
+  2275 ;; This function calls:
+  2276 ;;		Nothing
+  2277 ;; This function is called by:
+  2278 ;;		_motordePassoKLV
+  2279 ;; This function uses a non-reentrant model
+  2280 ;;
+  2281                           psect	text5,local,class=CODE,delta=2,merge=1,group=1
+  2282                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c"
+  2283                           	line	5
+  2284                           global __ptext5
+  2285                           __ptext5:	;psect for function ___aldiv
+  2286  0664                     psect	text5
+  2287                           	file	"C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c"
+  2288                           	line	5
+  2289                           	global	__size_of___aldiv
+  2290                           	__size_of___aldiv	equ	__end_of___aldiv-___aldiv
+  2291  00A6                     	
+  2292                           ___aldiv:	
+  2293  0664                     ;incstack = 0
+  2294                           	opt	stack 6
+  2295                           ; Regs used in ___aldiv: [wreg+status,2+status,0]
+  2296                           	line	13
   2297                           	
-  2298                           l356:	
-  2299  07EC                     	return
-  2300  07EC  0008               	opt stack 0
-  2301                           GLOBAL	__end_of___awdiv
-  2302                           	__end_of___awdiv:
-  2303  07ED                     	signat	___awdiv,8314
-  2304                           global	___latbits
-  2305                           ___latbits	equ	2
-  2306  0002                     	global	btemp
-  2307                           	btemp set 07Eh
-  2308  007E                     
-  2309                           	DABS	1,126,2	;btemp
-  2310                           	global	wtemp0
-  2311                           	wtemp0 set btemp+0
-  2312  007E                     	end
+  2298                           l962:	
+  2299  0664                     	bcf	status, 5	;RP0=0, select bank0
+  2300  0664  1283               	bcf	status, 6	;RP1=0, select bank0
+  2301  0665  1303               	clrf	(___aldiv@sign)
+  2302  0666  01A9               	line	14
+  2303                           	
+  2304                           l964:	
+  2305  0667                     	btfss	(___aldiv@divisor+3),7
+  2306  0667  1FA3               	goto	u511
+  2307  0668  2E6A               	goto	u510
+  2308  0669  2E6B               u511:
+  2309  066A                     	goto	l268
+  2310  066A  2E78               u510:
+  2311  066B                     	line	15
+  2312                           	
+  2313                           l966:	
+  2314  066B                     	comf	(___aldiv@divisor),f
+  2315  066B  09A0               	comf	(___aldiv@divisor+1),f
+  2316  066C  09A1               	comf	(___aldiv@divisor+2),f
+  2317  066D  09A2               	comf	(___aldiv@divisor+3),f
+  2318  066E  09A3               	incf	(___aldiv@divisor),f
+  2319  066F  0AA0               	skipnz
+  2320  0670  1903               	incf	(___aldiv@divisor+1),f
+  2321  0671  0AA1               	skipnz
+  2322  0672  1903               	incf	(___aldiv@divisor+2),f
+  2323  0673  0AA2               	skipnz
+  2324  0674  1903               	incf	(___aldiv@divisor+3),f
+  2325  0675  0AA3               	line	16
+  2326                           	clrf	(___aldiv@sign)
+  2327  0676  01A9               	incf	(___aldiv@sign),f
+  2328  0677  0AA9               	line	17
+  2329                           	
+  2330                           l268:	
+  2331  0678                     	line	18
+  2332                           	btfss	(___aldiv@dividend+3),7
+  2333  0678  1FA7               	goto	u521
+  2334  0679  2E7B               	goto	u520
+  2335  067A  2E7C               u521:
+  2336  067B                     	goto	l972
+  2337  067B  2E8C               u520:
+  2338  067C                     	line	19
+  2339                           	
+  2340                           l968:	
+  2341  067C                     	comf	(___aldiv@dividend),f
+  2342  067C  09A4               	comf	(___aldiv@dividend+1),f
+  2343  067D  09A5               	comf	(___aldiv@dividend+2),f
+  2344  067E  09A6               	comf	(___aldiv@dividend+3),f
+  2345  067F  09A7               	incf	(___aldiv@dividend),f
+  2346  0680  0AA4               	skipnz
+  2347  0681  1903               	incf	(___aldiv@dividend+1),f
+  2348  0682  0AA5               	skipnz
+  2349  0683  1903               	incf	(___aldiv@dividend+2),f
+  2350  0684  0AA6               	skipnz
+  2351  0685  1903               	incf	(___aldiv@dividend+3),f
+  2352  0686  0AA7               	line	20
+  2353                           	
+  2354                           l970:	
+  2355  0687                     	movlw	low(01h)
+  2356  0687  3001               	movwf	(??___aldiv+0)+0
+  2357  0688  00FD               	movf	(??___aldiv+0)+0,w
+  2358  0689  087D               	xorwf	(___aldiv@sign),f
+  2359  068A  06A9               	goto	l972
+  2360  068B  2E8C               	line	21
+  2361                           	
+  2362                           l269:	
+  2363  068C                     	line	22
+  2364                           	
+  2365                           l972:	
+  2366  068C                     	movlw	high highword(0)
+  2367  068C  3000               	movwf	(___aldiv@quotient+3)
+  2368  068D  00AD               	movlw	low highword(0)
+  2369  068E  3000               	movwf	(___aldiv@quotient+2)
+  2370  068F  00AC               	movlw	high(0)
+  2371  0690  3000               	movwf	(___aldiv@quotient+1)
+  2372  0691  00AB               	movlw	low(0)
+  2373  0692  3000               	movwf	(___aldiv@quotient)
+  2374  0693  00AA               
+  2375                           	line	23
+  2376                           	
+  2377                           l974:	
+  2378  0694                     	movf	(___aldiv@divisor+3),w
+  2379  0694  0823               	iorwf	(___aldiv@divisor+2),w
+  2380  0695  0422               	iorwf	(___aldiv@divisor+1),w
+  2381  0696  0421               	iorwf	(___aldiv@divisor),w
+  2382  0697  0420               	skipnz
+  2383  0698  1903               	goto	u531
+  2384  0699  2E9B               	goto	u530
+  2385  069A  2E9C               u531:
+  2386  069B                     	goto	l994
+  2387  069B  2EEF               u530:
+  2388  069C                     	line	24
+  2389                           	
+  2390                           l976:	
+  2391  069C                     	clrf	(___aldiv@counter)
+  2392  069C  01A8               	incf	(___aldiv@counter),f
+  2393  069D  0AA8               	line	25
+  2394                           	goto	l980
+  2395  069E  2EAD               	
+  2396                           l272:	
+  2397  069F                     	line	26
+  2398                           	
+  2399                           l978:	
+  2400  069F                     	movlw	01h
+  2401  069F  3001               	movwf	(??___aldiv+0)+0
+  2402  06A0  00FD               u545:
+  2403  06A1                     	clrc
+  2404  06A1  1003               	rlf	(___aldiv@divisor),f
+  2405  06A2  0DA0               	rlf	(___aldiv@divisor+1),f
+  2406  06A3  0DA1               	rlf	(___aldiv@divisor+2),f
+  2407  06A4  0DA2               	rlf	(___aldiv@divisor+3),f
+  2408  06A5  0DA3               	decfsz	(??___aldiv+0)+0
+  2409  06A6  0BFD               	goto	u545
+  2410  06A7  2EA1               	line	27
+  2411                           	movlw	low(01h)
+  2412  06A8  3001               	movwf	(??___aldiv+0)+0
+  2413  06A9  00FD               	movf	(??___aldiv+0)+0,w
+  2414  06AA  087D               	addwf	(___aldiv@counter),f
+  2415  06AB  07A8               	goto	l980
+  2416  06AC  2EAD               	line	28
+  2417                           	
+  2418                           l271:	
+  2419  06AD                     	line	25
+  2420                           	
+  2421                           l980:	
+  2422  06AD                     	btfss	(___aldiv@divisor+3),(31)&7
+  2423  06AD  1FA3               	goto	u551
+  2424  06AE  2EB0               	goto	u550
+  2425  06AF  2EB1               u551:
+  2426  06B0                     	goto	l978
+  2427  06B0  2E9F               u550:
+  2428  06B1                     	goto	l982
+  2429  06B1  2EB3               	
+  2430                           l273:	
+  2431  06B2                     	goto	l982
+  2432  06B2  2EB3               	line	29
+  2433                           	
+  2434                           l274:	
+  2435  06B3                     	line	30
+  2436                           	
+  2437                           l982:	
+  2438  06B3                     	movlw	01h
+  2439  06B3  3001               	movwf	(??___aldiv+0)+0
+  2440  06B4  00FD               u565:
+  2441  06B5                     	clrc
+  2442  06B5  1003               	rlf	(___aldiv@quotient),f
+  2443  06B6  0DAA               	rlf	(___aldiv@quotient+1),f
+  2444  06B7  0DAB               	rlf	(___aldiv@quotient+2),f
+  2445  06B8  0DAC               	rlf	(___aldiv@quotient+3),f
+  2446  06B9  0DAD               	decfsz	(??___aldiv+0)+0
+  2447  06BA  0BFD               	goto	u565
+  2448  06BB  2EB5               	line	31
+  2449                           	
+  2450                           l984:	
+  2451  06BC                     	movf	(___aldiv@divisor+3),w
+  2452  06BC  0823               	subwf	(___aldiv@dividend+3),w
+  2453  06BD  0227               	skipz
+  2454  06BE  1D03               	goto	u575
+  2455  06BF  2ECA               	movf	(___aldiv@divisor+2),w
+  2456  06C0  0822               	subwf	(___aldiv@dividend+2),w
+  2457  06C1  0226               	skipz
+  2458  06C2  1D03               	goto	u575
+  2459  06C3  2ECA               	movf	(___aldiv@divisor+1),w
+  2460  06C4  0821               	subwf	(___aldiv@dividend+1),w
+  2461  06C5  0225               	skipz
+  2462  06C6  1D03               	goto	u575
+  2463  06C7  2ECA               	movf	(___aldiv@divisor),w
+  2464  06C8  0820               	subwf	(___aldiv@dividend),w
+  2465  06C9  0224               u575:
+  2466  06CA                     	skipc
+  2467  06CA  1C03               	goto	u571
+  2468  06CB  2ECD               	goto	u570
+  2469  06CC  2ECE               u571:
+  2470  06CD                     	goto	l990
+  2471  06CD  2EDE               u570:
+  2472  06CE                     	line	32
+  2473                           	
+  2474                           l986:	
+  2475  06CE                     	movf	(___aldiv@divisor),w
+  2476  06CE  0820               	subwf	(___aldiv@dividend),f
+  2477  06CF  02A4               	movf	(___aldiv@divisor+1),w
+  2478  06D0  0821               	skipc
+  2479  06D1  1C03               	incfsz	(___aldiv@divisor+1),w
+  2480  06D2  0F21               	subwf	(___aldiv@dividend+1),f
+  2481  06D3  02A5               	movf	(___aldiv@divisor+2),w
+  2482  06D4  0822               	skipc
+  2483  06D5  1C03               	incfsz	(___aldiv@divisor+2),w
+  2484  06D6  0F22               	subwf	(___aldiv@dividend+2),f
+  2485  06D7  02A6               	movf	(___aldiv@divisor+3),w
+  2486  06D8  0823               	skipc
+  2487  06D9  1C03               	incfsz	(___aldiv@divisor+3),w
+  2488  06DA  0F23               	subwf	(___aldiv@dividend+3),f
+  2489  06DB  02A7               	line	33
+  2490                           	
+  2491                           l988:	
+  2492  06DC                     	bsf	(___aldiv@quotient)+(0/8),(0)&7
+  2493  06DC  142A               	goto	l990
+  2494  06DD  2EDE               	line	34
+  2495                           	
+  2496                           l275:	
+  2497  06DE                     	line	35
+  2498                           	
+  2499                           l990:	
+  2500  06DE                     	movlw	01h
+  2501  06DE  3001               u585:
+  2502  06DF                     	clrc
+  2503  06DF  1003               	rrf	(___aldiv@divisor+3),f
+  2504  06E0  0CA3               	rrf	(___aldiv@divisor+2),f
+  2505  06E1  0CA2               	rrf	(___aldiv@divisor+1),f
+  2506  06E2  0CA1               	rrf	(___aldiv@divisor),f
+  2507  06E3  0CA0               	addlw	-1
+  2508  06E4  3EFF               	skipz
+  2509  06E5  1D03               	goto	u585
+  2510  06E6  2EDF               
+  2511                           	line	36
+  2512                           	
+  2513                           l992:	
+  2514  06E7                     	movlw	01h
+  2515  06E7  3001               	subwf	(___aldiv@counter),f
+  2516  06E8  02A8               	btfss	status,2
+  2517  06E9  1D03               	goto	u591
+  2518  06EA  2EEC               	goto	u590
+  2519  06EB  2EED               u591:
+  2520  06EC                     	goto	l982
+  2521  06EC  2EB3               u590:
+  2522  06ED                     	goto	l994
+  2523  06ED  2EEF               	
+  2524                           l276:	
+  2525  06EE                     	goto	l994
+  2526  06EE  2EEF               	line	37
+  2527                           	
+  2528                           l270:	
+  2529  06EF                     	line	38
+  2530                           	
+  2531                           l994:	
+  2532  06EF                     	movf	((___aldiv@sign)),w
+  2533  06EF  0829               	btfsc	status,2
+  2534  06F0  1903               	goto	u601
+  2535  06F1  2EF3               	goto	u600
+  2536  06F2  2EF4               u601:
+  2537  06F3                     	goto	l998
+  2538  06F3  2F00               u600:
+  2539  06F4                     	line	39
+  2540                           	
+  2541                           l996:	
+  2542  06F4                     	comf	(___aldiv@quotient),f
+  2543  06F4  09AA               	comf	(___aldiv@quotient+1),f
+  2544  06F5  09AB               	comf	(___aldiv@quotient+2),f
+  2545  06F6  09AC               	comf	(___aldiv@quotient+3),f
+  2546  06F7  09AD               	incf	(___aldiv@quotient),f
+  2547  06F8  0AAA               	skipnz
+  2548  06F9  1903               	incf	(___aldiv@quotient+1),f
+  2549  06FA  0AAB               	skipnz
+  2550  06FB  1903               	incf	(___aldiv@quotient+2),f
+  2551  06FC  0AAC               	skipnz
+  2552  06FD  1903               	incf	(___aldiv@quotient+3),f
+  2553  06FE  0AAD               	goto	l998
+  2554  06FF  2F00               	
+  2555                           l277:	
+  2556  0700                     	line	40
+  2557                           	
+  2558                           l998:	
+  2559  0700                     	movf	(___aldiv@quotient+3),w
+  2560  0700  082D               	movwf	(?___aldiv+3)
+  2561  0701  00A3               	movf	(___aldiv@quotient+2),w
+  2562  0702  082C               	movwf	(?___aldiv+2)
+  2563  0703  00A2               	movf	(___aldiv@quotient+1),w
+  2564  0704  082B               	movwf	(?___aldiv+1)
+  2565  0705  00A1               	movf	(___aldiv@quotient),w
+  2566  0706  082A               	movwf	(?___aldiv)
+  2567  0707  00A0               
+  2568                           	goto	l278
+  2569  0708  2F09               	
+  2570                           l1000:	
+  2571  0709                     	line	41
+  2572                           	
+  2573                           l278:	
+  2574  0709                     	return
+  2575  0709  0008               	opt stack 0
+  2576                           GLOBAL	__end_of___aldiv
+  2577                           	__end_of___aldiv:
+  2578  070A                     	signat	___aldiv,8316
+  2579                           global	___latbits
+  2580                           ___latbits	equ	2
+  2581  0002                     	global	btemp
+  2582                           	btemp set 07Eh
+  2583  007E                     
+  2584                           	DABS	1,126,2	;btemp
+  2585                           	global	wtemp0
+  2586                           	wtemp0 set btemp+0
+  2587  007E                     	end
 
 
 Data Sizes:
     Strings     0
     Constant    0
-    Data        22
+    Data        20
     BSS         1
-    Persistent  0
+    Persistent  2
     Stack       0
 
 Auto Spaces:
     Space          Size  Autos    Used
-    COMMON           14     12      12
-    BANK0            80     13      36
+    COMMON           14     14      14
+    BANK0            80     31      54
     BANK1            80      0       0
     BANK3            96      0       0
     BANK2            96      0       0
@@ -2402,14 +2677,13 @@ Pointer List with Targets:
 
 Critical Paths under _main in COMMON
 
-    _main->_motordePassoKLV
-    _motordePassoKLV->___awdiv
-    ___awdiv->___wmul
+    _motordePassoKLV->___aldiv
+    ___aldiv->___lmul
 
 Critical Paths under _main in BANK0
 
     _main->_motordePassoKLV
-    _motordePassoKLV->___awdiv
+    _motordePassoKLV->___aldiv
 
 Critical Paths under _main in BANK1
 
@@ -2428,7 +2702,7 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (0) _main                                                 0     0      0    2451
+ (0) _main                                                 0     0      0    3385
                               _delay
                     _motordePassoKLV
               _motordePasso_klv_init
@@ -2436,23 +2710,22 @@ Call Graph Tables:
  (1) _motordePasso_klv_init                                2     0      2      98
                                               0 COMMON     2     0      2
  ---------------------------------------------------------------------------------
- (1) _motordePassoKLV                                     10     6      4    2026
-                                             11 COMMON     1     1      0
-                                              4 BANK0      9     5      4
-                            ___awdiv
-                             ___wmul
+ (1) _motordePassoKLV                                     17    11      6    2580
+                                             14 BANK0     17    11      6
+                            ___aldiv
+                             ___lmul
                               _delay
  ---------------------------------------------------------------------------------
- (2) _delay                                                3     1      2     327
+ (2) _delay                                                3     1      2     707
                                               0 COMMON     3     1      2
  ---------------------------------------------------------------------------------
- (2) ___wmul                                               6     2      4     244
-                                              0 COMMON     6     2      4
+ (2) ___lmul                                              13     5      8     244
+                                              0 COMMON    13     5      8
  ---------------------------------------------------------------------------------
- (2) ___awdiv                                              9     5      4    1060
-                                              6 COMMON     5     1      4
-                                              0 BANK0      4     4      0
-                             ___wmul (ARG)
+ (2) ___aldiv                                             15     7      8     452
+                                             13 COMMON     1     1      0
+                                              0 BANK0     14     6      8
+                             ___lmul (ARG)
  ---------------------------------------------------------------------------------
  Estimated maximum stack depth 2
  ---------------------------------------------------------------------------------
@@ -2462,9 +2735,9 @@ Call Graph Tables:
  _main (ROOT)
    _delay
    _motordePassoKLV
-     ___awdiv
-       ___wmul (ARG)
-     ___wmul
+     ___aldiv
+       ___lmul (ARG)
+     ___lmul
      _delay
    _motordePasso_klv_init
 
@@ -2482,119 +2755,124 @@ BANK1               50      0       0       7        0.0%
 BITBANK1            50      0       0       6        0.0%
 SFR1                 0      0       0       2        0.0%
 BITSFR1              0      0       0       2        0.0%
-BANK0               50      D      24       5       45.0%
+BANK0               50     1F      36       5       67.5%
 BITBANK0            50      0       0       4        0.0%
 SFR0                 0      0       0       1        0.0%
 BITSFR0              0      0       0       1        0.0%
-COMMON               E      C       C       1       85.7%
+COMMON               E      E       E       1      100.0%
 BITCOMMON            E      0       0       0        0.0%
 CODE                 0      0       0       0        0.0%
-DATA                 0      0      30      12        0.0%
-ABS                  0      0      30       3        0.0%
+DATA                 0      0      44      12        0.0%
+ABS                  0      0      44       3        0.0%
 NULL                 0      0       0       0        0.0%
 STACK                0      0       0       2        0.0%
 EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.00 build -1524193055 
-Symbol Table                                                                                   Wed May 26 16:20:51 2021
+Symbol Table                                                                                   Thu May 27 16:52:59 2021
 
-                                      l5 06A8                                        l6 069A  
-                                      l7 06AF                                        l8 06AF  
+                                      l5 0594                                        l6 0586  
+                                      l7 059B                                        l8 059B  
                                       pc 0002                              __CFG_CP$OFF 0000  
-                                     l91 06EB                                       l92 071E  
-                                     l93 071F                                       l94 071F  
-                           ___awdiv@sign 0037                                       fsr 0004  
-                    ___wmul@multiplicand 0072                                      l111 066F  
-                                    l202 06B3                                      l114 076A  
-                                    l203 06BD                                      l115 0748  
-                                    l204 06D2                                      l116 0779  
-                                    l205 06D7                                      l117 0779  
-                                    l350 07A2                                      l351 07B3  
-                                    l352 07B4                                      l353 07CD  
-                                    l354 07DB                                      l346 0789  
-                                    l355 07E7                                      l347 0797  
-                                    l356 07EC                                      l348 07DC  
-                                    l349 07AE                                      l930 0699  
-                                    l940 06B7                                      l932 069A  
-                                    l950 077A                                      l942 06C4  
-                                    l934 06A8                                      l960 078D  
-                                    l952 077D                                      l944 06CB  
-                                    l936 06B0                                      l970 07A2  
-                                    l962 0792                                      l954 0781  
-                                    l946 06D2                                      l938 06B3  
-                                    l980 07CB                                      l972 07A9  
-                                    l964 0797                                      l956 0786  
-                                    l948 06D7                                      l990 07E7  
-                                    l982 07CD                                      l974 07AE  
-                                    l966 0799                                      l958 0789  
-                                    l992 07EC                                      l984 07D4  
-                                    l976 07B4                                      l968 079F  
-                                    l978 07C5                                      l986 07DC  
-                                    l994 065F                                      l988 07E1  
-                                    l996 066B                                      l998 0725  
-                                    u500 078D                                      u501 078C  
-                                    u510 079F                                      u511 079E  
-                                    u440 06AE                                      u441 06AD  
-                                    u530 07B2                                      u450 06B7  
-                           __CFG_CPD$OFF 0000                                      u531 07B1  
-                                    u451 06B6                                      u525 07A3  
-                                    u550 07C5                                      u551 07C4  
-                                    u480 06D1                                      u545 07B5  
-                                    u481 06D0                                      u465 06BE  
-                                    u570 07DA                                      u490 0781  
-                                    u571 07D9                                      u555 07C1  
-                                    u491 0780                                      u475 06C5  
-                                    u580 07E1                                      u581 07E0  
-                                    u565 07CE                                      u590 0778  
-                                    u591 0777                                      u595 0774  
-                                    u697 069C                                      _ppr 0034  
-                                    fsr0 0004                                      indf 0000  
-                       motordePassoKLV@i 0041                         motordePassoKLV@t 003C  
-                           __CFG_LVP$OFF 0000                                     l1000 0745  
-                                   l1002 0748                                     l1010 076A  
-                                   l1004 0752                                     l1006 0758  
-                                   l1008 0761                                     l1050 06D8  
-                                   l1052 06EB                                     l1054 06FB  
-                                   l1056 0714                             __CFG_WRT$OFF 0000  
-                                   _main 06D8                                     btemp 007E  
+                                     l91 071D                                       l92 07E9  
+                                     l93 07EA                                       l94 07EA  
+                                     fsr 0004                                      l111 055D  
+                                    l114 0643                                      l115 0623  
+                                    l116 0663                                      l117 0663  
+                                    l214 05A5                                      l215 05C1  
+                                    l216 05DC                                      l217 05E5  
+                                    l270 06EF                                      l271 06AD  
+                                    l272 069F                                      l273 06B2  
+                                    l274 06B3                                      l275 06DE  
+                                    l276 06EE                                      l268 0678  
+                                    l277 0700                                      l269 068C  
+                                    l278 0709                                      l950 05A5  
+                                    l942 0585                                      l960 05E5  
+                                    l952 05A9                                      l944 0586  
+                                    l970 0687                                      l962 0664  
+                                    l954 05C1                                      l946 0594  
+                                    l980 06AD                                      l972 068C  
+                                    l964 0667                                      l956 05CA  
+                                    l948 059C                                      l990 06DE  
+                                    l982 06B3                                      l974 0694  
+                                    l966 066B                                      l958 05DC  
+                                    l992 06E7                                      l984 06BC  
+                                    l976 069C                                      l968 067C  
+                                    l986 06CE                                      l978 069F  
+                                    l994 06EF                                      l996 06F4  
+                                    l988 06DC                                      l998 0700  
+                                    u500 05DB                                      u501 05DA  
+                                    u510 066B                                      u511 066A  
+                                    u600 06F4                                      u520 067C  
+                                    u601 06F3                                      u521 067B  
+                                    u530 069C                                      u450 059A  
+                                    u610 0662                             __CFG_CPD$OFF 0000  
+                                    u531 069B                                      u451 0599  
+                                    u611 0661                                      u460 05A9  
+                                    u461 05A8                                      u613 065E  
+                                    u550 06B1                                      u551 06B0  
+                                    u471 05B2                                      u472 05B9  
+                                    u545 06A1                                      u473 05C0  
+                                    u570 06CE                                      u571 06CD  
+                                    u627 0588                                      u565 06B5  
+                                    u485 05C3                                      u590 06ED  
+                                    u591 06EC                                      u575 06CA  
+                                    u495 05CB                                      u585 06DF  
+                                    _ppr 0053                                      fsr0 0004  
+                                    indf 0000                         motordePassoKLV@i 003D  
+                       motordePassoKLV@t 0032                             __CFG_LVP$OFF 0000  
+                                   l1000 0709                                     l1010 0623  
+                                   l1002 054D                                     l1012 062B  
+                                   l1004 0559                                     l1020 070A  
+                                   l1014 0631                                     l1006 05E9  
+                                   l1030 0774                                     l1022 071D  
+                                   l1016 063A                                     l1008 0620  
+                                   l1040 07DF                                     l1032 0788  
+                                   l1024 0731                                     l1018 0643  
+                                   l1034 07A5                                     l1026 074E  
+                                   l1036 07AE                                     l1028 0757  
+                                   l1038 07CB                             __CFG_WRT$OFF 0000  
+                                   _main 070A                                     btemp 007E  
                                    start 0000                            __CFG_IESO$OFF 0000  
-                                  ?_main 0070                          __end_of___awdiv 07ED  
-                          __CFG_WDTE$OFF 0000                          ___awdiv@divisor 0076  
-                        ___awdiv@counter 0036                                    _PORTB 0006  
+                        __end_of___aldiv 070A                                    ?_main 0070  
+                          __CFG_WDTE$OFF 0000                                    _PORTB 0006  
                                   _PORTD 0008                                    _TRISB 0086  
-                         __CFG_FCMEN$OFF 0000                    _motordePasso_klv_init 065F  
-                                  _delay 0699                           __CFG_BOREN$OFF 0000  
-                                  pclath 000A                                    status 0003  
-                                  wtemp0 007E                           __CFG_MCLRE$OFF 0000  
-                        __initialization 07ED                             __end_of_main 0722  
-                                 ??_main 007C                                   ?_delay 0070  
-                       ___awdiv@dividend 0078                                   _ANSELH 0189  
-                         __CFG_PWRTE$OFF 0000                                   ___wmul 06B0  
-                              ??___awdiv 007A                                   _indice 0043  
-                                 delay@t 0070                         ___awdiv@quotient 0038  
-                                 _passos 0030                          _motordePassoKLV 0722  
-                 ?_motordePasso_klv_init 0070                  __end_of__initialization 07FC  
-                         __pcstackCOMMON 0070                             __pidataBANK0 0683  
-                          __end_of_delay 06B0                                  ??_delay 0072  
-                             __pbssBANK0 0043                               __pmaintext 06D8  
-                __end_of_motordePassoKLV 077A                                  ?___wmul 0070  
-                                _LCDbits 0008                               _tabTeclado 0020  
-                                ___awdiv 077A                          __size_of___wmul 0028  
-                                __ptext1 065F                                  __ptext2 0722  
-                                __ptext3 0699                                  __ptext4 06B0  
-                                __ptext5 077A                     end_of_initialization 07FC  
-                       ?_motordePassoKLV 003A                     motordePassoKLV@graus 003A  
+                    ___lmul@multiplicand 0074                           __CFG_FCMEN$OFF 0000  
+                  _motordePasso_klv_init 054D                                    _delay 0585  
+                         __CFG_BOREN$OFF 0000                                    pclath 000A  
+                                  status 0003                                    wtemp0 007E  
+                         __CFG_MCLRE$OFF 0000                          __initialization 07ED  
+                           __end_of_main 07ED                                   ??_main 007E  
+                                 ?_delay 0070                                   _ANSELH 0189  
+                         __CFG_PWRTE$OFF 0000                                   ___lmul 059C  
+                              ??___aldiv 007D                                   _indice 0055  
+                                 delay@t 0070                                   _passos 004F  
+                        _motordePassoKLV 05E6                   ?_motordePasso_klv_init 0070  
+                __end_of__initialization 07FC                           __pcstackCOMMON 0070  
+                           __pidataBANK0 0571                            __end_of_delay 059C  
+                                ??_delay 0072                               __pbssBANK0 0055  
+                             __pmaintext 070A                  __end_of_motordePassoKLV 0664  
+                                ?___lmul 0070                           ___lmul@product 0079  
+                                _LCDbits 0008                               _tabTeclado 003F  
+                                ___aldiv 0664                          __size_of___lmul 004A  
+                                __ptext1 054D                                  __ptext2 05E6  
+                                __ptext3 0585                                  __ptext4 059C  
+                                __ptext5 0664                         ___aldiv@dividend 0024  
+                   end_of_initialization 07FC                         ?_motordePassoKLV 002E  
+                       ___aldiv@quotient 002A                     motordePassoKLV@graus 002E  
                 ??_motordePasso_klv_init 0072                                _PORTDbits 0008  
-                              _TRISDbits 0088                           __end_of___wmul 06D8  
-                    start_initialization 07ED                 motordePassoKLV@numPassos 003E  
-               __CFG_FOSC$INTRC_NOCLKOUT 0000                                 ??___wmul 0074  
-                             init_fetch0 0670                              __pdataBANK0 0020  
-                              ___latbits 0002                            __pcstackBANK0 0036  
-                               ?___awdiv 0076                           __size_of_delay 0017  
-                         ___wmul@product 0074                        ___wmul@multiplier 0070  
-         __size_of_motordePasso_klv_init 0011            __end_of_motordePasso_klv_init 0670  
-motordePasso_klv_init@pulsosPorRevolucao 0070                         __size_of___awdiv 0073  
-               __size_of_motordePassoKLV 0058                        __CFG_BOR4V$BOR40V 0000  
-                          __size_of_main 004A                   motordePassoKLV@sentido 0040  
-                               init_ram0 0674                        ??_motordePassoKLV 007B  
+                              _TRISDbits 0088                           __end_of___lmul 05E6  
+                    start_initialization 07ED                 motordePassoKLV@numPassos 0038  
+               __CFG_FOSC$INTRC_NOCLKOUT 0000                                 ??___lmul 0078  
+                             init_fetch0 055E                              __pdataBANK0 003F  
+                              ___latbits 0002                            __pcstackBANK0 0020  
+                              __pnvBANK0 0053                                 ?___aldiv 0020  
+                         __size_of_delay 0017                          ___aldiv@divisor 0020  
+                        ___aldiv@counter 0028           __size_of_motordePasso_klv_init 0011  
+          __end_of_motordePasso_klv_init 055E  motordePasso_klv_init@pulsosPorRevolucao 0070  
+                      ___lmul@multiplier 0070                         __size_of___aldiv 00A6  
+               __size_of_motordePassoKLV 007E                        __CFG_BOR4V$BOR40V 0000  
+                          __size_of_main 00E3                   motordePassoKLV@sentido 003C  
+                               init_ram0 0562                             ___aldiv@sign 0029  
+                      ??_motordePassoKLV 0034  

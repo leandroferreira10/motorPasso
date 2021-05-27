@@ -13,14 +13,24 @@
 
 void main(void) 
 {
-    motordePasso_klv_init ( 100 );
-    delay(3000);
+    motordePasso_klv_init ( 1024 );
+    delay(1000);
     
     while( 1 )
     {
-        motordePassoKLV( CW, 90, 100 );
-        delay(3000);
-        motordePassoKLV( CCW, 180, 20 );
-        delay(3000);
+        motordePassoKLV( CW, 126, 1 );
+        delay(1000);
+        motordePassoKLV( CW, 126, 1 );
+        delay(1000);
+        motordePassoKLV( CW, 126, 1 );
+        delay(1000);
+        motordePassoKLV( CW, 126, 1 );
+        delay(1000);
+        motordePassoKLV( CW, 252, 1 );
+        delay(1000);
+        motordePassoKLV( CW, 252, 1 );
+        delay(1000);
+        motordePassoKLV( CW, 504, 1 );
+        delay(1000);
     }
 }

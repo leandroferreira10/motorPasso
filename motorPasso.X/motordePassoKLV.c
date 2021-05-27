@@ -10,7 +10,7 @@
 #include "delay.h"
 #include "motordePassoKLV.h"
 
-int ppr = 16;
+int ppr;
 char passos[4] = {0x02,0x04,0x01,0x08};
 char indice = 0;
 
@@ -29,16 +29,16 @@ void motordePasso_klv_init (int pulsosPorRevolucao )
     ppr = pulsosPorRevolucao;
 }
 
-void motordePassoKLV (char sentido, int graus, int t ) 
+void motordePassoKLV ( char sentido, long graus, int t ) 
 {
    int i;
-   int numPassos;
+   long numPassos;
    numPassos = (graus * ppr)/360;
    
    for( i=0; i<numPassos; i++ )
    {
        PORTD = ((PORTD & 0xF0) | passos[indice]);
        indice = (indice+sentido) % 4;
-       delay(250);
+       delay(t);
    }
 }

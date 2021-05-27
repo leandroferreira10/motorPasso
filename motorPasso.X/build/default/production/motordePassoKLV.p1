@@ -262,11 +262,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 "13 motordePassoKLV.c
-[; ;motordePassoKLV.c: 13: int ppr = 16;
+[; ;motordePassoKLV.c: 13: int ppr;
 [v _ppr `i ~T0 @X0 1 e ]
-[i _ppr
--> 16 `i
-]
 "14
 [; ;motordePassoKLV.c: 14: char passos[4] = {0x02,0x04,0x01,0x08};
 [v _passos `uc ~T0 @X0 -> 4 `i e ]
@@ -329,16 +326,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 138 ]
 }
 "32
-[; ;motordePassoKLV.c: 32: void motordePassoKLV (char sentido, int graus, int t )
-[v _motordePassoKLV `(v ~T0 @X0 1 ef3`uc`i`i ]
+[; ;motordePassoKLV.c: 32: void motordePassoKLV ( char sentido, long graus, int t )
+[v _motordePassoKLV `(v ~T0 @X0 1 ef3`uc`l`i ]
 "33
 [; ;motordePassoKLV.c: 33: {
 {
 [e :U _motordePassoKLV ]
 "32
-[; ;motordePassoKLV.c: 32: void motordePassoKLV (char sentido, int graus, int t )
+[; ;motordePassoKLV.c: 32: void motordePassoKLV ( char sentido, long graus, int t )
 [v _sentido `uc ~T0 @X0 1 r1 ]
-[v _graus `i ~T0 @X0 1 r2 ]
+[v _graus `l ~T0 @X0 1 r2 ]
 [v _t `i ~T0 @X0 1 r3 ]
 "33
 [; ;motordePassoKLV.c: 33: {
@@ -347,11 +344,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;motordePassoKLV.c: 34:    int i;
 [v _i `i ~T0 @X0 1 a ]
 "35
-[; ;motordePassoKLV.c: 35:    int numPassos;
-[v _numPassos `i ~T0 @X0 1 a ]
+[; ;motordePassoKLV.c: 35:    long numPassos;
+[v _numPassos `l ~T0 @X0 1 a ]
 "36
 [; ;motordePassoKLV.c: 36:    numPassos = (graus * ppr)/360;
-[e = _numPassos / * _graus _ppr -> 360 `i ]
+[e = _numPassos / * _graus -> _ppr `l -> -> 360 `i `l ]
 "38
 [; ;motordePassoKLV.c: 38:    for( i=0; i<numPassos; i++ )
 {
@@ -368,14 +365,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;motordePassoKLV.c: 41:        indice = (indice+sentido) % 4;
 [e = _indice -> % + -> _indice `i -> _sentido `i -> 4 `i `uc ]
 "42
-[; ;motordePassoKLV.c: 42:        delay(250);
-[e ( _delay (1 -> -> 250 `i `ui ]
+[; ;motordePassoKLV.c: 42:        delay(t);
+[e ( _delay (1 -> _t `ui ]
 "43
 [; ;motordePassoKLV.c: 43:    }
 }
 [e ++ _i -> 1 `i ]
 [e :U 143 ]
-[e $ < _i _numPassos 140  ]
+[e $ < -> _i `l _numPassos 140  ]
 [e :U 141 ]
 }
 "44

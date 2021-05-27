@@ -5,7 +5,7 @@
 #define CCW     -1
 
 void motordePasso_klv_init (int PulsosPorRevolucao );
-void motordePassoKLV (char sentido, int graus, int t );
+void motordePassoKLV (char sentido, long graus, int t );
 
 #endif
 

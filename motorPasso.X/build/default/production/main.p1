@@ -7,8 +7,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./delay.h: 4: void delay ( unsigned int t);
 [v _delay `(v ~T0 @X0 0 ef1`ui ]
 "8 ./motordePassoKLV.h
-[; ;./motordePassoKLV.h: 8: void motordePassoKLV (char sentido, int graus, int t );
-[v _motordePassoKLV `(v ~T0 @X0 0 ef3`uc`i`i ]
+[; ;./motordePassoKLV.h: 8: void motordePassoKLV (char sentido, long graus, int t );
+[v _motordePassoKLV `(v ~T0 @X0 0 ef3`uc`l`i ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -277,11 +277,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "16
-[; ;main.c: 16:     motordePasso_klv_init ( 100 );
-[e ( _motordePasso_klv_init (1 -> 100 `i ]
+[; ;main.c: 16:     motordePasso_klv_init ( 1024 );
+[e ( _motordePasso_klv_init (1 -> 1024 `i ]
 "17
-[; ;main.c: 17:     delay(3000);
-[e ( _delay (1 -> -> 3000 `i `ui ]
+[; ;main.c: 17:     delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
 "19
 [; ;main.c: 19:     while( 1 )
 [e :U 140 ]
@@ -289,24 +289,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 20:     {
 {
 "21
-[; ;main.c: 21:         motordePassoKLV( 1, 90, 100 );
-[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> 90 `i -> 100 `i ]
+[; ;main.c: 21:         motordePassoKLV( 1, 126, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 126 `i `l -> 1 `i ]
 "22
-[; ;main.c: 22:         delay(3000);
-[e ( _delay (1 -> -> 3000 `i `ui ]
+[; ;main.c: 22:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
 "23
-[; ;main.c: 23:         motordePassoKLV( -1, 180, 20 );
-[e ( _motordePassoKLV (3 , , -> -U -> 1 `i `uc -> 180 `i -> 20 `i ]
+[; ;main.c: 23:         motordePassoKLV( 1, 126, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 126 `i `l -> 1 `i ]
 "24
-[; ;main.c: 24:         delay(3000);
-[e ( _delay (1 -> -> 3000 `i `ui ]
+[; ;main.c: 24:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
 "25
-[; ;main.c: 25:     }
+[; ;main.c: 25:         motordePassoKLV( 1, 126, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 126 `i `l -> 1 `i ]
+"26
+[; ;main.c: 26:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
+"27
+[; ;main.c: 27:         motordePassoKLV( 1, 126, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 126 `i `l -> 1 `i ]
+"28
+[; ;main.c: 28:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
+"29
+[; ;main.c: 29:         motordePassoKLV( 1, 252, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 252 `i `l -> 1 `i ]
+"30
+[; ;main.c: 30:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
+"31
+[; ;main.c: 31:         motordePassoKLV( 1, 252, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 252 `i `l -> 1 `i ]
+"32
+[; ;main.c: 32:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
+"33
+[; ;main.c: 33:         motordePassoKLV( 1, 504, 1 );
+[e ( _motordePassoKLV (3 , , -> -> 1 `i `uc -> -> 504 `i `l -> 1 `i ]
+"34
+[; ;main.c: 34:         delay(1000);
+[e ( _delay (1 -> -> 1000 `i `ui ]
+"35
+[; ;main.c: 35:     }
 }
 [e :U 139 ]
 [e $U 140  ]
 [e :U 141 ]
-"26
-[; ;main.c: 26: }
+"36
+[; ;main.c: 36: }
 [e :UE 138 ]
 }

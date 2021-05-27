@@ -2537,20 +2537,30 @@ void delay ( unsigned int t);
 
 
 void motordePasso_klv_init (int PulsosPorRevolucao );
-void motordePassoKLV (char sentido, int graus, int t );
+void motordePassoKLV (char sentido, long graus, int t );
 # 12 "main.c" 2
 
 
 void main(void)
 {
-    motordePasso_klv_init ( 100 );
-    delay(3000);
+    motordePasso_klv_init ( 1024 );
+    delay(1000);
 
     while( 1 )
     {
-        motordePassoKLV( 1, 90, 100 );
-        delay(3000);
-        motordePassoKLV( -1, 180, 20 );
-        delay(3000);
+        motordePassoKLV( 1, 126, 1 );
+        delay(1000);
+        motordePassoKLV( 1, 126, 1 );
+        delay(1000);
+        motordePassoKLV( 1, 126, 1 );
+        delay(1000);
+        motordePassoKLV( 1, 126, 1 );
+        delay(1000);
+        motordePassoKLV( 1, 252, 1 );
+        delay(1000);
+        motordePassoKLV( 1, 252, 1 );
+        delay(1000);
+        motordePassoKLV( 1, 504, 1 );
+        delay(1000);
     }
 }
