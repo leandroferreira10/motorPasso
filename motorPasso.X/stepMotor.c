@@ -6,7 +6,8 @@
 #include "stepMotor.h"
 
 int ppr;
-char passos [4] = {0x02, 0x04, 0x01, 0x08};
+char passos [8] = { 0X02, 0x06, 0x04, 0x05, 0x01, 0x09, 0x08, 0x0A };
+char tabela [4] = { 0x02, 0x04, 0x01, 0x08 };
 char indice = 0;
 
 void stepMotor_init ( int pulsosPorRevolucao )
@@ -24,17 +25,33 @@ void stepMotor_init ( int pulsosPorRevolucao )
     ppr = pulsosPorRevolucao;
 }
 
-void stepMotor ( char sentido, int graus, int t )
+void stepMotor ( char passo, char sentido, int graus, int t )
 {
-    int x;
-    int numPassos;
-    numPassos = ( graus * ppr)/360;
-    
-    for (x=0; x<numPassos; x++ )
+    if ( passo == MEIOPASSO  ) // meio passo.
     {
-        PORTD = ((PORTD & 0xF0)| passos [indice]);
-        indice = ( indice + sentido) % 4;
-        delay(t);
+        int x;
+        int numPassos;
+        numPassos = ( graus * ppr)/180;
+
+        for (x=0; x<numPassos; x++ )
+        {
+            PORTD = ((PORTD & 0xF0)| passos [indice]);
+            delay(t);
+            indice = ( indice + sentido) % 8;  
+        }
     } 
+    else 
+    {
+        int x;
+        int numPassos;
+        numPassos = ( graus * ppr)/360;
+
+        for (x=0; x<numPassos; x++ )
+        {
+            PORTD = ((PORTD & 0xF0)| tabela [indice]);
+            delay(t);
+            indice = ( indice + sentido) % 4;   
+        } 
+    }
 }
 

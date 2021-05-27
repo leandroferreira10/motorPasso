@@ -8,6 +8,7 @@
       <itemPath>delay.h</itemPath>
       <itemPath>dispLCD4vias.h</itemPath>
       <itemPath>teclado.h</itemPath>
+      <itemPath>stepMotor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -20,6 +21,7 @@
       <itemPath>dispLCD4vias.c</itemPath>
       <itemPath>teclado.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>stepMotor.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
