@@ -1,25 +1,25 @@
-Microchip MPLAB XC8 Compiler V2.00 ()
+Microchip MPLAB XC8 Compiler V2.32
 
 Linker command line:
 
--W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.00\pic\dat\en_msgs.txt \
-  -cs -h+dist/default/production\motorPasso.X.production.sym \
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
+  -h+dist/default/production\motorPasso.X.production.sym \
   --cmf=dist/default/production\motorPasso.X.production.cmf -z -Q16F887 \
-  -oC:\Users\21193634\AppData\Local\Temp\s7eo.2 \
-  -Mdist/default/production/motorPasso.X.production.map -E1 -ver=XC8 \
-  --acfsm=1493 -ASTACK=0110h-016fh -pstack=STACK -ACODE=00h-07FFhx4 \
-  -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
-  -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
-  -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
-  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -oC:\Users\55119\AppData\Local\Temp\xcAs39o.4 \
+  -Mdist/default/production/motorPasso.X.production.map -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK \
+  -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
+  -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
+  -ABANK3=0190h-01EFh -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
   -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
   -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -ACONFIG=02007h-02008h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
-  -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
-  -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\21193634\AppData\Local\Temp\s7eo.o \
-  dist/default/production\motorPasso.X.production.o 
+  -pfunctab=ENTRY -k C:\Users\55119\AppData\Local\Temp\xcAs39o.obj \
+  dist/default/production\motorPasso.X.production.obj 
 
 Object code version is 3.11
 
@@ -28,39 +28,40 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\21193634\AppData\Local\Temp\s7eo.o
+C:\Users\55119\AppData\Local\Temp\xcAs39o.obj
                 end_init                              0        0        3        0       0
-                config                             2007     2007        2     400E       0
-dist/default/production\motorPasso.X.production.o
-                cinit                               7ED      7ED       13      FDA       0
-                text5                               664      664       A6      CC8       0
-                text4                               59C      59C       4A      B38       0
-                text3                               585      585       17      B0A       0
-                text2                               5E6      5E6       7E      BCC       0
-                text1                               54D      54D       11      A9A       0
-                maintext                            70A      70A       E3      E14       0
+                config                             2007     2007        2        0       4
+dist/default/production\motorPasso.X.production.obj
+                cinit                               7EF      7EF       11      FDE       0
+                config                             2007     2007        2        0       4
+                text5                               6A0      6A0       8D      D40       0
+                text4                               5DB      5DB       3F      BB6       0
+                text3                               5AD      5AD       12      B5A       0
+                text2                               72D      72D       C2      E5A       0
+                text1                               58D      58D        F      B1A       0
+                maintext                            61A      61A       86      C34       0
                 cstackBANK0                          20       20       1F       20       1
                 cstackCOMMON                         70       70        E       70       1
-                inittext                            55E      55E       13      ABC       0
-                dataBANK0                            3F       3F       14       20       1
-                bssBANK0                             55       55        1       20       1
-                nvBANK0                              53       53        2       20       1
-                idataBANK0                          571      571       14      AE2       0
+                inittext                            59C      59C       11      B38       0
+                dataBANK0                            3F       3F       1C       20       1
+                bssBANK0                             5D       5D        1       20       1
+                nvBANK0                              5B       5B        2       20       1
+                idataBANK0                          5BF      5BF       1C      B7E       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                              0        0        3         0
-                cinit                               7ED      7ED       13         0
-                text5                               664      664       A6         0
-                text4                               59C      59C       4A         0
-                text3                               585      585       17         0
-                text2                               5E6      5E6       7E         0
-                text1                               54D      54D       11         0
-                maintext                            70A      70A       E3         0
-                inittext                            55E      55E       13         0
-                idataBANK0                          571      571       14         0
+                cinit                               7EF      7EF       11         0
+                text5                               6A0      6A0       8D         0
+                text4                               5DB      5DB       3F         0
+                text3                               5AD      5AD       12         0
+                text2                               72D      72D       C2         0
+                text1                               58D      58D        F         0
+                maintext                            61A      61A       86         0
+                inittext                            59C      59C       11         0
+                idataBANK0                          5BF      5BF       1C         0
 
         CLASS   STRCODE        
 
@@ -75,9 +76,9 @@ TOTAL           Name                               Link     Load   Length     Sp
 
         CLASS   BANK0          
                 cstackBANK0                          20       20       1F         1
-                dataBANK0                            3F       3F       14         1
-                bssBANK0                             55       55        1         1
-                nvBANK0                              53       53        2         1
+                dataBANK0                            3F       3F       1C         1
+                bssBANK0                             5D       5D        1         1
+                nvBANK0                              5B       5B        2         1
 
         CLASS   BANK1          
 
@@ -99,7 +100,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   SFR3           
 
         CLASS   CONFIG         
-                config                             2007     2007        2         0
+                config                             2007     2007        2         4
 
         CLASS   IDLOC          
 
@@ -110,36 +111,35 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                cstackBANK0                    000020  000036  000056        20       1  BANK0       1
+                cstackBANK0                    000020  00003E  00005E        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
-                text1                          00054D  000011  00055E       A9A       0  CODE        2
-                inittext                       00055E  000013  000571       ABC       0  CODE        2
-                idataBANK0                     000571  000014  000585       AE2       0  CODE        2
-                text3                          000585  000017  00059C       B0A       0  CODE        2
-                text4                          00059C  00004A  0005E6       B38       0  CODE        2
-                text2                          0005E6  00007E  000664       BCC       0  CODE        2
-                text5                          000664  0000A6  00070A       CC8       0  CODE        2
-                maintext                       00070A  0000E3  0007ED       E14       0  CODE        2
-                cinit                          0007ED  000013  000800       FDA       0  CODE        2
-                config                         002007  000002  002009      400E       0  CONFIG      2
+                text1                          00058D  00000F  00059C       B1A       0  CODE        2
+                inittext                       00059C  000011  0005AD       B38       0  CODE        2
+                text3                          0005AD  000012  0005BF       B5A       0  CODE        2
+                idataBANK0                     0005BF  00001C  0005DB       B7E       0  CODE        2
+                text4                          0005DB  00003F  00061A       BB6       0  CODE        2
+                maintext                       00061A  000086  0006A0       C34       0  CODE        2
+                text5                          0006A0  00008D  00072D       D40       0  CODE        2
+                text2                          00072D  0000C2  0007EF       E5A       0  CODE        2
+                cinit                          0007EF  000011  000800       FDE       0  CODE        2
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0056-006F             1A           1
+        BANK0            005E-006F             12           1
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0003-054C            54A           2
+        CODE             0003-058C            58A           2
                          0800-1FFF            800
-        CONST            0003-054C            100           2
+        CONST            0003-058C            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0003-054C            100           2
+        ENTRY            0003-058C            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
-        RAM              0056-006F             1A           1
+        RAM              005E-006F             12           1
                          00A0-00EF             50
                          0110-016F             60
                          0190-01EF             60
@@ -148,34 +148,18 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
-        STRCODE          0003-054C            54A           2
+        STRCODE          0003-058C            58A           2
                          0800-1FFF           1800
-        STRING           0003-054C            100           2
+        STRING           0003-058C            100           2
                          0800-1FFF            100
 
                                   Symbol Table
 
 ?___aldiv                                cstackBANK0  0020
 ?___lmul                                 cstackCOMMON 0070
-_ANSELH                                  (abs)        0189
-_LCDbits                                 (abs)        0008
-_PORTB                                   (abs)        0006
 _PORTD                                   (abs)        0008
 _PORTDbits                               (abs)        0008
-_TRISB                                   (abs)        0086
 _TRISDbits                               (abs)        0088
-__CFG_BOR4V$BOR40V                       (abs)        0000
-__CFG_BOREN$OFF                          (abs)        0000
-__CFG_CP$OFF                             (abs)        0000
-__CFG_CPD$OFF                            (abs)        0000
-__CFG_FCMEN$OFF                          (abs)        0000
-__CFG_FOSC$INTRC_NOCLKOUT                (abs)        0000
-__CFG_IESO$OFF                           (abs)        0000
-__CFG_LVP$OFF                            (abs)        0000
-__CFG_MCLRE$OFF                          (abs)        0000
-__CFG_PWRTE$OFF                          (abs)        0000
-__CFG_WDTE$OFF                           (abs)        0000
-__CFG_WRT$OFF                            (abs)        0000
 __Habs1                                  abs1         0000
 __Hbank0                                 bank0        0000
 __Hbank1                                 bank1        0000
@@ -194,7 +178,6 @@ __Heeprom_data                           eeprom_data  0000
 __Hend_init                              end_init     0003
 __Hfunctab                               functab      0000
 __HidataBANK0                            idataBANK0   0000
-__Hidloc                                 idloc        0000
 __Hinit                                  init         0000
 __Hinittext                              inittext     0000
 __Hintentry                              intentry     0000
@@ -207,10 +190,11 @@ __Hsfr0                                  sfr0         0000
 __Hsfr1                                  sfr1         0000
 __Hsfr2                                  sfr2         0000
 __Hsfr3                                  sfr3         0000
-__Hspace_0                               (abs)        2009
+__Hspace_0                               (abs)        0800
 __Hspace_1                               (abs)        007E
 __Hspace_2                               (abs)        0000
 __Hspace_3                               (abs)        0000
+__Hspace_4                               (abs)        4010
 __Hstack                                 stack        0000
 __Hstrings                               strings      0000
 __Htext                                  text         0000
@@ -220,11 +204,11 @@ __Lbank1                                 bank1        0000
 __Lbank2                                 bank2        0000
 __Lbank3                                 bank3        0000
 __LbssBANK0                              bssBANK0     0000
-__Lcinit                                 cinit        07ED
+__Lcinit                                 cinit        07EF
 __Lclrtext                               clrtext      0000
 __Lcode                                  code         0000
 __Lcommon                                common       0000
-__Lconfig                                config       2007
+__Lconfig                                config       0000
 __LcstackBANK0                           cstackBANK0  0000
 __LcstackCOMMON                          cstackCOMMON 0000
 __LdataBANK0                             dataBANK0    0000
@@ -232,7 +216,6 @@ __Leeprom_data                           eeprom_data  0000
 __Lend_init                              end_init     0000
 __Lfunctab                               functab      0000
 __LidataBANK0                            idataBANK0   0000
-__Lidloc                                 idloc        0000
 __Linit                                  init         0000
 __Linittext                              inittext     0000
 __Lintentry                              intentry     0000
@@ -249,14 +232,15 @@ __Lspace_0                               (abs)        0000
 __Lspace_1                               (abs)        0000
 __Lspace_2                               (abs)        0000
 __Lspace_3                               (abs)        0000
+__Lspace_4                               (abs)        0000
 __Lstack                                 stack        0000
 __Lstrings                               strings      0000
 __Ltext                                  text         0000
-__S0                                     (abs)        2009
+__S0                                     (abs)        0800
 __S1                                     (abs)        007E
 __S2                                     (abs)        0000
 __S3                                     (abs)        0000
-___aldiv                                 text5        0664
+___aldiv                                 text5        06A0
 ___aldiv@counter                         cstackBANK0  0028
 ___aldiv@dividend                        cstackBANK0  0024
 ___aldiv@divisor                         cstackBANK0  0020
@@ -264,292 +248,104 @@ ___aldiv@quotient                        cstackBANK0  002A
 ___aldiv@sign                            cstackBANK0  0029
 ___int_sp                                stack        0000
 ___latbits                               (abs)        0002
-___lmul                                  text4        059C
+___lmul                                  text4        05DB
 ___lmul@multiplicand                     cstackCOMMON 0074
 ___lmul@multiplier                       cstackCOMMON 0070
 ___lmul@product                          cstackCOMMON 0079
 ___sp                                    stack        0000
-__end_of___aldiv                         text5        070A
-__end_of___lmul                          text4        05E6
+___stackhi                               (abs)        0000
+___stacklo                               (abs)        0000
+__end_of___aldiv                         text5        072D
+__end_of___lmul                          text4        061A
 __end_of__initialization                 cinit        07FC
-__end_of_delay                           text3        059C
-__end_of_main                            maintext     07ED
-__end_of_motordePassoKLV                 text2        0664
-__end_of_motordePasso_klv_init           text1        055E
-__initialization                         cinit        07ED
-__pbssBANK0                              bssBANK0     0055
+__end_of_delay                           text3        05BF
+__end_of_main                            maintext     06A0
+__end_of_motordePassoKLV                 text2        07EF
+__end_of_motordePasso_klv_init           text1        059C
+__initialization                         cinit        07EF
+__pbssBANK0                              bssBANK0     005D
 __pcstackBANK0                           cstackBANK0  0020
 __pcstackCOMMON                          cstackCOMMON 0070
 __pdataBANK0                             dataBANK0    003F
-__pidataBANK0                            idataBANK0   0571
-__pmaintext                              maintext     070A
-__pnvBANK0                               nvBANK0      0053
-__ptext1                                 text1        054D
-__ptext2                                 text2        05E6
-__ptext3                                 text3        0585
-__ptext4                                 text4        059C
-__ptext5                                 text5        0664
+__pidataBANK0                            idataBANK0   05BF
+__pmaintext                              maintext     061A
+__pnvBANK0                               nvBANK0      005B
+__ptext1                                 text1        058D
+__ptext2                                 text2        072D
+__ptext3                                 text3        05AD
+__ptext4                                 text4        05DB
+__ptext5                                 text5        06A0
 __size_of___aldiv                        (abs)        0000
 __size_of___lmul                         (abs)        0000
 __size_of_delay                          (abs)        0000
 __size_of_main                           (abs)        0000
 __size_of_motordePassoKLV                (abs)        0000
 __size_of_motordePasso_klv_init          (abs)        0000
-_delay                                   text3        0585
-_indice                                  bssBANK0     0055
-_main                                    maintext     070A
-_motordePassoKLV                         text2        05E6
-_motordePasso_klv_init                   text1        054D
+_delay                                   text3        05AD
+_indice                                  bssBANK0     005D
+_main                                    maintext     061A
+_motordePassoKLV                         text2        072D
+_motordePasso_klv_init                   text1        058D
 _passos                                  dataBANK0    004F
-_ppr                                     nvBANK0      0053
-_tabTeclado                              dataBANK0    003F
+_ppr                                     nvBANK0      005B
+_tabela                                  dataBANK0    0057
 btemp                                    (abs)        007E
 delay@t                                  cstackCOMMON 0070
 end_of_initialization                    cinit        07FC
-init_fetch0                              inittext     055E
-init_ram0                                inittext     0562
+init_fetch0                              inittext     059C
+init_ram0                                inittext     05A0
 intlevel0                                functab      0000
 intlevel1                                functab      0000
 intlevel2                                functab      0000
 intlevel3                                functab      0000
 intlevel4                                functab      0000
 intlevel5                                functab      0000
-motordePassoKLV@graus                    cstackBANK0  002E
-motordePassoKLV@i                        cstackBANK0  003D
-motordePassoKLV@numPassos                cstackBANK0  0038
-motordePassoKLV@sentido                  cstackBANK0  003C
-motordePassoKLV@t                        cstackBANK0  0032
+motordePassoKLV@graus                    cstackBANK0  002F
+motordePassoKLV@numPassos                cstackBANK0  0036
+motordePassoKLV@numPassos_124            cstackBANK0  0038
+motordePassoKLV@passo                    cstackBANK0  003A
+motordePassoKLV@sentido                  cstackBANK0  002E
+motordePassoKLV@t                        cstackBANK0  0033
+motordePassoKLV@x                        cstackBANK0  003B
+motordePassoKLV@x_123                    cstackBANK0  003D
 motordePasso_klv_init@pulsosPorRevolucao cstackCOMMON 0070
 reset_vec                                reset_vec    0000
-stackhi                                  (abs)        0000
-stacklo                                  (abs)        0000
 start                                    init         0000
-start_initialization                     cinit        07ED
+start_initialization                     cinit        07EF
 wtemp0                                   (abs)        007E
-
-
-FUNCTION INFORMATION:
-
- *************** function _main *****************
- Defined at:
-		line 14 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         0       0       0       0       0
-      Locals:         0       0       0       0       0
-      Temps:          0       0       0       0       0
-      Totals:         0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels required when called:    2
- This function calls:
-		_delay
-		_motordePassoKLV
-		_motordePasso_klv_init
- This function is called by:
-		Startup code after reset
- This function uses a non-reentrant model
-
-
- *************** function _motordePasso_klv_init *****************
- Defined at:
-		line 17 in file "motordePassoKLV.c"
- Parameters:    Size  Location     Type
-  pulsosPorRev    2    0[COMMON] int 
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         2       0       0       0       0
-      Locals:         0       0       0       0       0
-      Temps:          0       0       0       0       0
-      Totals:         2       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _motordePassoKLV *****************
- Defined at:
-		line 32 in file "motordePassoKLV.c"
- Parameters:    Size  Location     Type
-  sentido         1    wreg     unsigned char 
-  graus           4   14[BANK0 ] long 
-  t               2   18[BANK0 ] int 
- Auto vars:     Size  Location     Type
-  sentido         1   28[BANK0 ] unsigned char 
-  numPassos       4   24[BANK0 ] long 
-  i               2   29[BANK0 ] int 
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         0       6       0       0       0
-      Locals:         0       7       0       0       0
-      Temps:          0       4       0       0       0
-      Totals:         0      17       0       0       0
-Total ram usage:       17 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    1
- This function calls:
-		___aldiv
-		___lmul
-		_delay
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _delay *****************
- Defined at:
-		line 7 in file "delay.c"
- Parameters:    Size  Location     Type
-  t               2    0[COMMON] unsigned int 
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         2       0       0       0       0
-      Locals:         0       0       0       0       0
-      Temps:          1       0       0       0       0
-      Totals:         3       0       0       0       0
-Total ram usage:        3 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
-		_motordePassoKLV
- This function uses a non-reentrant model
-
-
- *************** function ___lmul *****************
- Defined at:
-		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c"
- Parameters:    Size  Location     Type
-  multiplier      4    0[COMMON] unsigned long 
-  multiplicand    4    4[COMMON] unsigned long 
- Auto vars:     Size  Location     Type
-  product         4    9[COMMON] unsigned long 
- Return value:  Size  Location     Type
-                  4    0[COMMON] unsigned long 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         8       0       0       0       0
-      Locals:         4       0       0       0       0
-      Temps:          1       0       0       0       0
-      Totals:        13       0       0       0       0
-Total ram usage:       13 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_motordePassoKLV
- This function uses a non-reentrant model
-
-
- *************** function ___aldiv *****************
- Defined at:
-		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c"
- Parameters:    Size  Location     Type
-  divisor         4    0[BANK0 ] long 
-  dividend        4    4[BANK0 ] long 
- Auto vars:     Size  Location     Type
-  quotient        4   10[BANK0 ] long 
-  sign            1    9[BANK0 ] unsigned char 
-  counter         1    8[BANK0 ] unsigned char 
- Return value:  Size  Location     Type
-                  4    0[BANK0 ] long 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-      Params:         0       8       0       0       0
-      Locals:         0       6       0       0       0
-      Temps:          1       0       0       0       0
-      Totals:         1      14       0       0       0
-Total ram usage:       15 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_motordePassoKLV
- This function uses a non-reentrant model
-
 
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-delay.c
-		_delay         		CODE           	0585	0000	24
+C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c
+		___lmul        		CODE           	05DB	0000	63
 
-delay.c estimated size: 24
+C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c estimated size: 63
 
-C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
-		___lmul        		CODE           	059C	0000	75
+../motorPasso.X/delay.c
+		_delay         		CODE           	05AD	0000	18
 
-C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c estimated size: 75
+../motorPasso.X/delay.c estimated size: 18
 
 shared
-		__initialization		CODE           	07ED	0000	16
+		__initialization		CODE           	07EF	0000	13
 
-shared estimated size: 16
+shared estimated size: 13
 
 motordePassoKLV.c
-		_motordePassoKLV		CODE           	05E6	0000	127
-		_motordePasso_klv_init		CODE           	054D	0000	18
+		_motordePassoKLV		CODE           	072D	0000	194
+		_motordePasso_klv_init		CODE           	058D	0000	15
 
-motordePassoKLV.c estimated size: 145
-
-C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
-		___aldiv       		CODE           	0664	0000	167
-
-C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c estimated size: 167
+motordePassoKLV.c estimated size: 209
 
 main.c
-		_main          		CODE           	070A	0000	228
+		_main          		CODE           	061A	0000	134
 
-main.c estimated size: 228
+main.c estimated size: 134
+
+C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
+		___aldiv       		CODE           	06A0	0000	141
+
+C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c estimated size: 141
 

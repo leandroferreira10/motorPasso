@@ -1,10 +1,8 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"3450 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f887.h
-[v _ANSELH `Vuc ~T0 @X0 0 e@393 ]
-"1479
-[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
-"229
-[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+[v F38 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.32\pic\include\builtins.h
+[v __delay `JF38 ~T0 @X0 0 e ]
+[p i __delay ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -1517,160 +1515,39 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 127: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 128: extern __bank0 __bit __powerdown;
 [; ;pic.h: 129: extern __bank0 __bit __timeout;
-"5 config.h
-[p x FOSC=INTRC_NOCLKOUT ]
-"6
-[p x WDTE=OFF ]
-"7
-[p x PWRTE=OFF ]
-"8
-[p x MCLRE=OFF ]
-"9
-[p x CP=OFF ]
-"10
-[p x CPD=OFF ]
-"11
-[p x BOREN=OFF ]
+[; ;delay.h: 6: void delay( unsigned int t );
+"12 ../motorPasso.X/delay.c
+[v _delay `(v ~T0 @X0 1 ef1`ui ]
+"13
+{
+[; ;delay.c: 12: void delay( unsigned int t )
+[; ;delay.c: 13: {
+[e :U _delay ]
 "12
-[p x IESO=OFF ]
+[v _t `ui ~T0 @X0 1 r1 ]
 "13
-[p x FCMEN=OFF ]
-"14
-[p x LVP=OFF ]
-"17
-[p x BOR4V=BOR40V ]
-"18
-[p x WRT=OFF ]
-"12 teclado.c
-[v _teclado_init `(v ~T0 @X0 1 ef ]
-"13
-{
-[; ;teclado.c: 12: void teclado_init ( void )
-[; ;teclado.c: 13: {
-[e :U _teclado_init ]
 [f ]
-[; ;teclado.c: 14: ANSELH = 0;
+[; ;delay.c: 14: while( t )
 "14
-[e = _ANSELH -> -> 0 `i `uc ]
-[; ;teclado.c: 15: TRISB = 0xF0;
-"15
-[e = _TRISB -> -> 240 `i `uc ]
-[; ;teclado.c: 16: PORTB = 0;
-"16
-[e = _PORTB -> -> 0 `i `uc ]
-[; ;teclado.c: 17: }
-"17
-[e :UE 138 ]
-}
-[v F1296 `uc ~T0 @X0 -> 4 `i t ]
-"19
-[v _tabTeclado `F1296 ~T0 @X0 -> 4 `i e ]
-[i _tabTeclado
-:U ..
-:U ..
-"20
--> -> 49 `ui `uc
--> -> 50 `ui `uc
--> -> 51 `ui `uc
--> -> 65 `ui `uc
-..
-:U ..
-"21
--> -> 52 `ui `uc
--> -> 53 `ui `uc
--> -> 54 `ui `uc
--> -> 66 `ui `uc
-..
-:U ..
-"22
--> -> 55 `ui `uc
--> -> 56 `ui `uc
--> -> 57 `ui `uc
--> -> 67 `ui `uc
-..
-:U ..
-"23
--> -> 42 `ui `uc
--> -> 48 `ui `uc
--> -> 35 `ui `uc
--> -> 68 `ui `uc
-..
-..
-]
-[; ;teclado.c: 19: char tabTeclado [4][4] =
-[; ;teclado.c: 20: { {'1','2','3','A'},
-[; ;teclado.c: 21: {'4','5','6','B'},
-[; ;teclado.c: 22: {'7','8','9','C'},
-[; ;teclado.c: 23: {'*','0','#','D'} };
-"27
-[v _teclado `(uc ~T0 @X0 1 ef ]
-"28
-{
-[; ;teclado.c: 27: char teclado ( void )
-[; ;teclado.c: 28: {
-[e :U _teclado ]
-[f ]
-"29
-[v _tecla `uc ~T0 @X0 1 a ]
-[; ;teclado.c: 29: char tecla = 0;
-[e = _tecla -> -> 0 `i `uc ]
-"30
-[v _c `uc ~T0 @X0 1 a ]
-[v _l `uc ~T0 @X0 1 a ]
-[; ;teclado.c: 30: char c, l;
-[; ;teclado.c: 32: for (l=0; l<4; l++)
-"32
-{
-[e = _l -> -> 0 `i `uc ]
-[e $ < -> _l `i -> 4 `i 140  ]
-[e $U 141  ]
-"33
+[e $U 139  ]
 [e :U 140 ]
-[; ;teclado.c: 33: {
+[; ;delay.c: 15: {
+"15
 {
-[; ;teclado.c: 34: PORTB = 0x01<<l;
-"34
-[e = _PORTB -> << -> 1 `i _l `uc ]
-[; ;teclado.c: 35: for( c=0; c<4; c++ )
-"35
-{
-[e = _c -> -> 0 `i `uc ]
-[e $ < -> _c `i -> 4 `i 143  ]
-[e $U 144  ]
-"36
-[e :U 143 ]
-[; ;teclado.c: 36: {
-{
-[; ;teclado.c: 37: if ( PORTB & 0X10<<c )
-"37
-[e $ ! != & -> _PORTB `i << -> 16 `i _c -> 0 `i 146  ]
-[; ;teclado.c: 38: tecla = tabTeclado [l][c];
-"38
-[e = _tecla *U + &U *U + &U _tabTeclado * -> _l `ux -> * -> # *U &U *U &U _tabTeclado `ui -> -> 4 `i `ui `ux * -> _c `ux -> -> # *U &U *U + &U _tabTeclado * -> _l `ux -> * -> # *U &U *U &U _tabTeclado `ui -> -> 4 `i `ui `ux `ui `ux ]
-[e :U 146 ]
-"39
+[; ;delay.c: 16: _delay((unsigned long)((1)*(4000000/4000.0)));
+"16
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;delay.c: 17: --t;
+"17
+[e =- _t -> -> 1 `i `ui ]
+"18
 }
-"35
-[e ++ _c -> -> 1 `i `uc ]
-[e $ < -> _c `i -> 4 `i 143  ]
-[e :U 144 ]
-"39
-}
-"40
-}
-"32
-[e ++ _l -> -> 1 `i `uc ]
-[e $ < -> _l `i -> 4 `i 140  ]
+[e :U 139 ]
+"14
+[e $ != _t -> -> 0 `i `ui 140  ]
 [e :U 141 ]
-"40
-}
-[; ;teclado.c: 39: }
-[; ;teclado.c: 40: }
-[; ;teclado.c: 41: return( tecla );
-"41
-[e ) _tecla ]
-[e $UE 139  ]
-[; ;teclado.c: 42: }
-"42
-[e :UE 139 ]
+[; ;delay.c: 18: }
+[; ;delay.c: 19: }
+"19
+[e :UE 138 ]
 }

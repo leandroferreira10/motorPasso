@@ -4,11 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>config.h</itemPath>
-      <itemPath>delay.h</itemPath>
-      <itemPath>dispLCD4vias.h</itemPath>
-      <itemPath>teclado.h</itemPath>
+      <itemPath>../motorPasso.X/config.h</itemPath>
+      <itemPath>../motorPasso.X/delay.h</itemPath>
       <itemPath>motordePassoKLV.h</itemPath>
+      <itemPath>teclado.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -17,11 +16,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>delay.c</itemPath>
-      <itemPath>dispLCD4vias.c</itemPath>
-      <itemPath>teclado.c</itemPath>
+      <itemPath>../motorPasso.X/delay.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>motordePassoKLV.c</itemPath>
+      <itemPath>teclado.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -30,7 +28,7 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>.</Elem>
+    <Elem>../motorPasso.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -42,7 +40,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.00</languageToolchainVersion>
+        <languageToolchainVersion>2.32</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>

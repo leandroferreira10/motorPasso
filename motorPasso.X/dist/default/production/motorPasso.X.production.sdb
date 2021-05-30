@@ -1,43 +1,31 @@
-[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F887 ]
-[d frameptr 6 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+[d frameptr 0 ]
+"12 C:\Users\55119\MPLABXProjects/motorPasso.X/delay.c
+[v _delay delay `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"7 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\delay.c
-[v _delay delay `(v  1 e 1 0 ]
-"66 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\dispLCD4vias.c
-[v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
-"99
-[v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
-"115
-[v _dispLCD_lincol dispLCD_lincol `(v  1 e 1 0 ]
-"14 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\main.c
+"14 C:\Users\55119\MPLABXProjects\motorPasso.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"17 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\motordePassoKLV.c
+"19 C:\Users\55119\MPLABXProjects\motorPasso.X\motordePassoKLV.c
 [v _motordePasso_klv_init motordePasso_klv_init `(v  1 e 1 0 ]
-"32
+"34
 [v _motordePassoKLV motordePassoKLV `(v  1 e 1 0 ]
-"228 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
-[v _PORTB PORTB `VEuc  1 e 1 @6 ]
-"352
+"353 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f887.h
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
-[s S144 . 1 `uc 1 RD0 1 0 :1:0 
+[s S71 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -46,12 +34,10 @@
 `uc 1 RD6 1 0 :1:6 
 `uc 1 RD7 1 0 :1:7 
 ]
-"369
-[u S153 . 1 `S144 1 . 1 0 ]
-[v _PORTDbits PORTDbits `VES153  1 e 1 @8 ]
-"1478
-[v _TRISB TRISB `VEuc  1 e 1 @134 ]
-[s S39 . 1 `uc 1 TRISD0 1 0 :1:0 
+"370
+[u S80 . 1 `S71 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES80  1 e 1 @8 ]
+[s S50 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -60,61 +46,56 @@
 `uc 1 TRISD6 1 0 :1:6 
 `uc 1 TRISD7 1 0 :1:7 
 ]
-"1619
-[u S48 . 1 `S39 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES48  1 e 1 @136 ]
-"3449
-[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-[s S30 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 RS 1 0 :1:2 
-`uc 1 EN 1 0 :1:3 
-`uc 1 BUS 1 0 :4:4 
-]
-"23 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\dispLCD4vias.c
-[u S35 . 1 `S30 1 . 1 0 ]
-[v _LCDbits LCDbits `VES35  1 e 1 @8 ]
-"13 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\motordePassoKLV.c
+"1620
+[u S59 . 1 `S50 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES59  1 e 1 @136 ]
+"14 C:\Users\55119\MPLABXProjects\motorPasso.X\motordePassoKLV.c
 [v _ppr ppr `i  1 e 2 0 ]
-"14
-[v _passos passos `[4]uc  1 e 4 0 ]
 "15
+[v _passos passos `[8]uc  1 e 8 0 ]
+"16
+[v _tabela tabela `[4]uc  1 e 4 0 ]
+"17
 [v _indice indice `uc  1 e 1 0 ]
-"19 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\teclado.c
-[v _tabTeclado tabTeclado `[4][4]uc  1 e 16 0 ]
-"14 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\main.c
+"14 C:\Users\55119\MPLABXProjects\motorPasso.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"36
+"30
 } 0
-"17 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\motordePassoKLV.c
+"19 C:\Users\55119\MPLABXProjects\motorPasso.X\motordePassoKLV.c
 [v _motordePasso_klv_init motordePasso_klv_init `(v  1 e 1 0 ]
 {
 [v motordePasso_klv_init@pulsosPorRevolucao pulsosPorRevolucao `i  1 p 2 0 ]
-"30
-} 0
 "32
+} 0
+"34
 [v _motordePassoKLV motordePassoKLV `(v  1 e 1 0 ]
 {
-[v motordePassoKLV@sentido sentido `uc  1 a 1 wreg ]
-"35
-[v motordePassoKLV@numPassos numPassos `l  1 a 4 24 ]
+[v motordePassoKLV@passo passo `uc  1 a 1 wreg ]
+"51
+[v motordePassoKLV@x_123 x `i  1 a 2 29 ]
+"52
+[v motordePassoKLV@numPassos_124 numPassos `i  1 a 2 24 ]
+"38
+[v motordePassoKLV@x x `i  1 a 2 27 ]
+"39
+[v motordePassoKLV@numPassos numPassos `i  1 a 2 22 ]
 "34
-[v motordePassoKLV@i i `i  1 a 2 29 ]
-"32
-[v motordePassoKLV@sentido sentido `uc  1 a 1 wreg ]
-[v motordePassoKLV@graus graus `l  1 p 4 14 ]
-[v motordePassoKLV@t t `i  1 p 2 18 ]
+[v motordePassoKLV@passo passo `uc  1 a 1 wreg ]
+[v motordePassoKLV@sentido sentido `uc  1 p 1 14 ]
+[v motordePassoKLV@graus graus `l  1 p 4 15 ]
+[v motordePassoKLV@t t `i  1 p 2 19 ]
 "36
-[v motordePassoKLV@sentido sentido `uc  1 a 1 28 ]
-"44
+[v motordePassoKLV@passo passo `uc  1 a 1 26 ]
+"62
 } 0
-"7 C:\Users\21193634\MPLABXProjects\motorPasso-1\motorPasso.X\delay.c
+"12 C:\Users\55119\MPLABXProjects/motorPasso.X/delay.c
 [v _delay delay `(v  1 e 1 0 ]
 {
 [v delay@t t `ui  1 p 2 0 ]
-"14
+"19
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -124,7 +105,7 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
 "129
 } 0
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "10
